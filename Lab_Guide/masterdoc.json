@@ -1,9 +1,12 @@
-[ {
-  "Name": "PowerBI Embedded Lab",
-  "Language": "English",
-  "Files": [
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerBI-Embedded/main/Lab_Guide/labguide.md",
-      "Order": 1
-    }
-  ]
+[
+  {
+    "Name": "PowerBI Embedded Lab",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerBI-Embedded/main/Lab_Guide/labguide.md",
+        "Order": 8
+      }
+    ]
+  }
+]
