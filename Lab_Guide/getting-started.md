@@ -25,13 +25,13 @@
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-   ![](media/imagesignin.png "Enter Email")
+   ![](media/pbi32.jpg)
      
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-   ![](media/image8.png "Enter Password")
+   ![](media/pbi33.jpg)
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
