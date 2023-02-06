@@ -4,8 +4,12 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerBI-Embedded/main/Lab_Guide/labguide.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerBI-Embedded/main/Lab_Guide/getting-started.md",
         "Order": 1
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerBI-Embedded/main/Lab_Guide/labguide.md",
+        "Order": 2
       }
     ]
   }
