@@ -41,7 +41,7 @@
    
 1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](media/select-rg.png "Resource groups")
+   ![](media/pbi34.jpg)
    
 1. Confirm that you have all resource group is present as shown below.
 
