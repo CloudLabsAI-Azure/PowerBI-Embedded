@@ -49,10 +49,10 @@ i.e., client ID, tenant ID, client secret, workspace ID, report ID, and dataset 
 
     **Important**:
 
-    1. Azure AD configurations (client ID, tenant ID, client secret) will be shared with you 
+   - Azure AD configurations (client ID, tenant ID, client secret) will be shared with you 
 during the session.
     
-    1. For Power BI configuration, you can refer to the earlier steps where you captured
+   - For Power BI configuration, you can refer to the earlier steps where you captured
 workspace ID, report ID, dataset ID.
 
    ![](media/pbi4.jpg)
@@ -81,7 +81,7 @@ leave the browser open and go back to your Visual Studio Code.
 
    ![](media/pbi9.jpg)   
 
-1.  Save the code CTRL-S in Visual Studio Code; and refresh the web page in browser. You should 
+1. Save the code CTRL-S in Visual Studio Code; and refresh the web page in browser. You should 
 see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
 
@@ -102,9 +102,9 @@ in Power BI service report after clicking on the SAVE button.
 
    Important:
 
-   1. Dataset ID was captured earlier in the exercise
+   - Dataset ID was captured earlier in the exercise
 
-1.Uncomment the Q&A embed code (i.e., line #60) to embed a Q&A visual
+1. Uncomment the Q&A embed code (i.e., line #60) to embed a Q&A visual
 
    ![](media/pbi13.jpg)   
 
@@ -131,11 +131,11 @@ dataset through the question suggestions in the visual to view the output
 
    ![](media/pbi16.jpg)
 
-1.  You can also hover over the visuals and click on the … to export the data – as shown below:
+1. You can also hover over the visuals and click on the … to export the data – as shown below:
 
    ![](media/pbi17.jpg)   
 
-1.  Please note – you will be prompted to explore various options as part of your export – make sure to choose the CSV option as shown below:   
+1. Please note – you will be prompted to explore various options as part of your export – make sure to choose the CSV option as shown below:   
 
    ![](media/pbi18.jpg)
 
@@ -151,23 +151,23 @@ dataset through the question suggestions in the visual to view the output
 
    ![](media/pbi20.jpg)
 
-   1. Open PBI report and click on Modeling tab.
+1. Open PBI report and click on Modeling tab.
 
    ![](media/pbi21.jpg)
 
-   1. Click on Manage roles option and then click on Create button.
+1. Click on Manage roles option and then click on Create button.
 
    ![](media/pbi23.jpg)
 
-   1. Create a role named “john” and then click on Store table in the section.
+1. Create a role named “john” and then click on Store table in the section.
    
-   1. Set the filter for this user as [Store] = “External”.
+1. Set the filter for this user as [Store] = “External”.
 
    ![](media/pbi24.jpg)   
 
-   1.  Save and publish the report to PBI service.
+1. Save and publish the report to PBI service.
 
-1.  In `/Services/PBIEmbedService.cs` file, **uncomment** line #118
+1. In `/Services/PBIEmbedService.cs` file, **uncomment** line #118
 
    ![](media/pbi25.jpg)  
 
