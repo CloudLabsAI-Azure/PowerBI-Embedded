@@ -15,9 +15,9 @@
  
 ## Login to Azure Portal
 
-1. In the JumpVM, click on the Microsoft Edge shortcut which is created on the desktop and search for `https://portal.azure.com`.
+1. In the JumpVM, click on the Azure portal shortcut which is created on the desktop and search for `https://portal.azure.com`.
 
-   ![](media/pbi30.jpg)
+   ![](media/pbi38.jpg)
 
 1. In the Welcome to Microsoft Edge page, select **Start without your data** and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
 
