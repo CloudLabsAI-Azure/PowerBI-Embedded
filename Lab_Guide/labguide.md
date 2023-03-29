@@ -91,7 +91,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi53.jpg)
 
-1. Now, naivgate to **hacker<inject key="DeploymentID" enableCopy="false" /> workspace and you'll be visualize the new report.
+1. Now, naivgate to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and you'll be visualize the new report.
 
    ![](media/pbi54.jpg)
 
@@ -135,43 +135,85 @@ except – now you have edit/modification capabilities:
 
 ### Module 4: Embedding with RLS
 
-1. Download the **Sales and Returns Sample without RLS** from your Power BI HackerXX workspace.
+In this part, we will create a role in order to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that,internal users can only see internal sales data and external users can only see external sales data.
 
-   ![](media/pbi19.jpg)
+1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open ** Sales and Returns Sample without RLS.pbix (3)** file.
 
-1. Open your **Sales and Returns Sample without RLS** report in the Power BI desktop.   
+   ![](media/pbi63.jpg)
 
-1. In this part, we will create a role in order to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that,internal users can only see internal sales data and external users can only see external sales data.Here is a sample of the Store data:
+1. If Enter your email address pop up appears, Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Continue**.
 
-   ![](media/pbi20.jpg)
+   ![](media/pbi64.jpg)   
 
-1. Open PBI report and click on Modeling tab.
-
-   ![](media/pbi21.jpg)
-
-1. Click on Manage roles option and then click on Create button.
-
-   ![](media/pbi23.jpg)
-
-1. Create a role named “john” and then click on Store table in the section.
+1. 1. Now enter the following password and click on **Sign in**.
    
-1. Set the filter for this user as [Store] = “External”.
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   
+   ![](media/pbi33.jpg)   
 
-   ![](media/pbi24.jpg)   
+1. In the Power BI application, select **Modelling (1)** tab, click on **Manage roles (2)**, and click on **Create (3)** button.
 
-1. Save and publish the report to PBI service.
+   ![](media/pbi66.jpg)
 
-1. In `/Services/PBIEmbedService.cs` file, **uncomment** line #118
+1. Follow the below mentioned steps to create role.
 
-   ![](media/pbi25.jpg)  
+   - Create a role named **john (1)**.
+   - Select **Store (2)** table.
+   - Enter `[Store] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
+   - Finally, click on **Save (4)** button.
 
-1. Update the username and role values to the new role which you have created in PBI Desktop.
+   ![](media/pbi67.jpg)
 
-1. Similar to Module 1 earlier, navigate to /appsettings.json file and update your parameters to reflect the new report “Sales and Returns Sample without RLS”.
+1. Click on **File** present in top left corner.
+
+   ![](media/pbi68.jpg)
+
+1. Click on the **Save** button to save the report.
+
+   ![](media/pbi69.jpg)
+
+1.  Click on **File** present in top left corner. Click on **publish (1)** button and select **Publish to Power BI (2)**.
+
+   ![](media/pbi70.jpg)
+
+1. Select the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and click on **Select (2)**.
+
+   ![](media/pbi71.jpg)
+
+   >**Note**: Please wait untill the the report gets published.
+
+   1. From the broswer tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
+
+   ![](media/pbi74.jpg)   
+
+1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
+
+   ![](media/pbi75.jpg) 
+
+   1. From the broswer tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
+
+   ![](media/pbi76.jpg)   
+    
+1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
+
+   ![](media/pbi75.jpg)    
+
+1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)**.
+
+   ![](media/pbi72.jpg) 
+
+1. Review that the Username and role values to the new role which you have created in PBI Desktop is already updated.
+
+   ![](media/pbi73.jpg) 
+    
+1. Similar to Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters to reflect the new report “Sales and Returns Sample without RLS”.
+
+   ![](media/pbi78.jpg) 
 
 1. Click on the Terminal and type in **dotnet run** and Enter to run the sample code.
 
-   ![](media/pbi26.jpg) 
+   ![](media/pbi44.jpg)
+
 
 1. . Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
 specific filtering.
