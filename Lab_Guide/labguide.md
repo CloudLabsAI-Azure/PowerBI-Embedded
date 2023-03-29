@@ -10,7 +10,7 @@ At the end of this workshop, you will learn how to –
 
 ## Module 1: Embedding Your First Power BI report
 
-1. In browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**  
+1. In browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
    ![](media/pbi39.jpg)
           
@@ -50,7 +50,7 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi48.jpg)
 
-1. In the Access tab, Search and select **PowerbiSDP (1)** security group, select **Admin (2)** privilage from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
+1. In the Access tab, search and select **PowerbiSDP (1)** security group, select **Admin (2)** privilage from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
 
    ![](media/pbi49.jpg)  
 
@@ -174,7 +174,7 @@ In this part, we will create a role in order to enable row level security. In ou
 
 1.  Click on **File** present in top left corner. Click on **publish (1)** button and select **Publish to Power BI (2)**.
 
-   ![](media/pbi70.jpg)
+    ![](media/pbi70.jpg)
 
 1. Select the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and click on **Select (2)**.
 
