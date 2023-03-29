@@ -83,57 +83,55 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi10.jpg)
 
-1. Perform a test update to the embedded report and verify that the updates are getting reflected 
-in Power BI service report after clicking on the SAVE button. 
+1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Dount chart (2)**.
 
-   ![](media/pbi11.jpg)
+   ![](media/pbi52.jpg)
+
+1. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
+
+   ![](media/pbi53.jpg)
+
+1. Now, naivgate to **hacker<inject key="DeploymentID" enableCopy="false" /> workspace and you'll be visualize the new report.
+
+   ![](media/pbi54.jpg)
 
    In this module, you have learnt to embed a report in Read and Edit mode.
 
 ### Module 2: Embedding Q&A
 
-1. In `/wwwroot/js/index.js` file, add/update the dataset ID on line #11.
+1. Navigate back to VS Code, In `/wwwroot/js/index.js` file, the **Dataset ID** is updated already.
 
-   ![](media/pbi12.jpg)
+   ![](media/pbi55.jpg)
 
-   Important:
+1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and Save the code using **CTRL-S**.
 
-   - Dataset ID was captured earlier in the exercise
+   ![](media/pbi56.jpg)   
 
-1. Uncomment the Q&A embed code (i.e., line #60) to embed a Q&A visual
+1. Navigate back to browser and refresh the web page. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
 
-   ![](media/pbi13.jpg)   
+   ![](media/pbi57.jpg)
 
-1. Save the code CTRL-S in Visual Studio Code; and refresh the web page in browser4. Try querying the 
-dataset through the question suggestions in the visual to view the output  
-
-   ![](media/pbi14.jpg)
-
-   You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
+   - You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
 
    In this module, you have learnt to embed Q&A into your web application   
 
 ### Module 3: Export to CSV
 
-1. Comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement.
+1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and Save the code using **CTRL-S**.
 
-   ![](media/pbi15.jpg)
+   ![](media/pbi59.jpg)
 
-1. Save the code; and refresh the web page in browser.
+1. Navigate back to browser and refresh the web page. Click on **Export to CSV** button on the top right of the embedded report. A CSV file will get downloaded with the exported data present in it.
 
-1. Click on “Export to CSV” button on the top right of the embedded report. A CSV file named will get downloaded with the exported data present in it.
+   ![](media/pbi60.jpg)
 
-1. You can also hover over the visuals and click on the … to export the data – as shown below:
+1. You can also export the data by clicking on the **elipse (1)** button and select **Export data (2)**
 
-   ![](media/pbi16.jpg)
+   ![](media/pbi61.jpg)   
 
-1. You can also hover over the visuals and click on the … to export the data – as shown below:
+1. in Which data do you want to export pop up, select **Summarized data (1)**, select **.csv (30,000-row max) (2)** as File format, and click on **Export (3)**. 
 
-   ![](media/pbi17.jpg)   
-
-1. Please note – you will be prompted to explore various options as part of your export – make sure to choose the CSV option as shown below:   
-
-   ![](media/pbi18.jpg)
+   ![](media/pbi62.jpg)
 
 ### Module 4: Embedding with RLS
 
