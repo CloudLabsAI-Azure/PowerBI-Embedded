@@ -22,7 +22,7 @@ At the end of this workshop, you will learn how to –
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)**
+1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is precreated for the lab.
 
    ![](media/pbi40.jpg)
 
@@ -55,6 +55,8 @@ At the end of this workshop, you will learn how to –
    ![](media/pbi49.jpg)  
 
 1. In the VS Code, make sure that the **POWER BI EMBEDDED WORKSHOP_LATEST (1)** folder is open, click on the **appsettings.json (2)** to open it, replace **client id, tenant id, client secret (3)** in the line 5,6, and 10 respectively. you can find the service principal details in the **Environment details (4)** tab. 
+
+   - Also, the **workspaceID**, **reportid**, and **datasetid** in lines 13, 14, and 15 are automatically replaced with the workspace ID, reportid, and datasetid, respectively.
 
    ![](media/pbi42.jpg)
 
