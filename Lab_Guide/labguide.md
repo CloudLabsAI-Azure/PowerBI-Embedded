@@ -22,7 +22,7 @@ At the end of this workshop, you will learn how to –
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is precreated for the lab.
+1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
 
    ![](media/pbi40.jpg)
 
@@ -34,23 +34,23 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi43.jpg) 
 
-1. From Power BI home page, Click on the **elipse (1)** button, select the **Settings (2)**, and click on **Admin portal (3)** button.
+1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings (2)**, and click on **Admin portal (3)** button.
 
    ![](media/pbi45.jpg)
 
-1. Scroll down to Developer settings, **Enable (1)** the Allow service pricipals to use Power BI APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Developer settings, **Enable (1)** the Allow service principals to use Power BI APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/pbi46.jpg)
 
-1. Scroll down to Admin API settings, **Enable (1)** the Allow service pricipals to use read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, **Enable (1)** the Allow service principals to use read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/pbi47.jpg)   
 
-1. From the side blade, click on **Workspaces (1)** and select **elipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
+1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
    ![](media/pbi48.jpg)
 
-1. In the Access tab, search and select **PowerbiSDP (1)** security group, select **Admin (2)** privilage from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
+1. In the Access tab, search and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
 
    ![](media/pbi49.jpg)  
 
@@ -60,7 +60,7 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi42.jpg)
 
-1. Click on the Terminal and type in `dotnet run` and Enter to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode.
+1. Click on the Terminal and type in `dotnet run` and enter to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode.
 
    ![](media/pbi44.jpg)
 
@@ -85,7 +85,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi10.jpg)
 
-1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Dount chart (2)**.
+1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Donut chart (2)**.
 
    ![](media/pbi52.jpg)
 
@@ -93,7 +93,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi53.jpg)
 
-1. Now, naivgate to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and you'll be visualize the new report.
+1. Now, navigate to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and you'll be to visualize the new report.
 
    ![](media/pbi54.jpg)
 
@@ -101,11 +101,11 @@ except – now you have edit/modification capabilities:
 
 ### Module 2: Embedding Q&A
 
-1. Navigate back to VS Code, In `/wwwroot/js/index.js` file, the **Dataset ID** is updated already.
+1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is updated already.
 
    ![](media/pbi55.jpg)
 
-1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and Save the code using **CTRL-S**.
+1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and save the code using **CTRL-S**.
 
    ![](media/pbi56.jpg)   
 
@@ -115,11 +115,11 @@ except – now you have edit/modification capabilities:
 
    - You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
 
-   In this module, you have learnt to embed Q&A into your web application   
+   In this module, you have learnt to embed Q&A into your web application.   
 
 ### Module 3: Export to CSV
 
-1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and Save the code using **CTRL-S**.
+1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL-S**.
 
    ![](media/pbi59.jpg)
 
@@ -127,7 +127,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi60.jpg)
 
-1. You can also export the data by clicking on the **elipse (1)** button and select **Export data (2)**
+1. You can also export the data by clicking on the **ellipse (1)** button and select **Export data (2)**
 
    ![](media/pbi61.jpg)   
 
@@ -137,7 +137,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 4: Embedding with RLS
 
-In this part, we will create a role in order to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that,internal users can only see internal sales data and external users can only see external sales data.
+In this part, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
 1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open ** Sales and Returns Sample without RLS.pbix (3)** file.
 
@@ -182,9 +182,9 @@ In this part, we will create a role in order to enable row level security. In ou
 
    ![](media/pbi71.jpg)
 
-   >**Note**: Please wait untill the the report gets published.
+   >**Note**: Please wait until the report gets published.
 
-   1. From the broswer tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
+   1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
 
    ![](media/pbi74.jpg)   
 
@@ -192,7 +192,7 @@ In this part, we will create a role in order to enable row level security. In ou
 
    ![](media/pbi75.jpg) 
 
-   1. From the broswer tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
+   1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
 
    ![](media/pbi76.jpg)   
     
@@ -208,16 +208,16 @@ In this part, we will create a role in order to enable row level security. In ou
 
    ![](media/pbi73.jpg) 
     
-1. Similar to Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters to reflect the new report “Sales and Returns Sample without RLS”.
+1. Like in Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters to reflect the new report “Sales and Returns Sample without RLS”.
 
    ![](media/pbi78.jpg) 
 
-1. Click on the Terminal and type in **dotnet run** and Enter to run the sample code.
+1. Click on the Terminal and type in **dotnet run** and enter to run the sample code.
 
    ![](media/pbi44.jpg)
 
 
-1. . Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
+1. Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
 specific filtering.
 
 1. In this module, you have learned to embed a Power BI report with data security as per user’s context.
