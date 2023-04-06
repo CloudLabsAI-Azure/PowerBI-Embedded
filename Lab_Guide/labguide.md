@@ -147,7 +147,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi64.jpg)   
 
-1. 1. Now enter the following password and click on **Sign in**.
+1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
@@ -174,9 +174,9 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi69.jpg)
 
-1.  Click on **File** present in top left corner. Click on **publish (1)** button and select **Publish to Power BI (2)**.
+1. Click on **File** present in top left corner. Click on **publish (1)** button and select **Publish to Power BI (2)**.
 
-    ![](media/pbi70.jpg)
+   ![](media/pbi70.jpg)
 
 1. Select the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and click on **Select (2)**.
 
@@ -192,7 +192,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi75.jpg) 
 
-   1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
 
    ![](media/pbi76.jpg)   
     
@@ -215,7 +215,6 @@ In this part, we will create a role to enable row level security. In our case, w
 1. Click on the Terminal and type in **dotnet run** and enter to run the sample code.
 
    ![](media/pbi44.jpg)
-
 
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
 specific filtering.
