@@ -54,20 +54,21 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi49.jpg)  
 
-1. In the VS Code, make sure that the **POWER BI EMBEDDED WORKSHOP_LATEST (1)** folder is open, click on the **appsettings.json (2)** to open it, replace **client id, tenant id, client secret (3)** in the line 5,6, and 10 respectively. you can find the service principal details in the **Environment details (4)** tab. 
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**, then click on the **appsettings.json (2)** to open it, replace **client id, tenant id, client secret (3)** in the line 5,6, and 10 respectively. you can find the service principal details in the **Environment details (4)** tab. 
 
-   - Also, the **workspaceID**, **reportid**, and **datasetid** in lines 13, 14, and 15 are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
+   ![](media/M1S12_1.png)
+
+   - The **workspaceID**, **reportid**, and **datasetid** in lines 13, 14, and 15 are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
    ![](media/pbi42.jpg)
 
-1. Click on the Terminal and type in `dotnet run` and enter to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode.
+1. Click on the Terminal and type in `dotnet run`, press enter to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
-   ![](media/pbi44.jpg)
+   ![](media/M1S13.png)
 
-1. Once the code is executed, you can click on the link `https://localhost:5000` as shown below to 
-launch the browser/app:   
+1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
-   ![](media/pbi45.jpg)
+   ![](media/M1S14.png)
 
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
@@ -82,7 +83,9 @@ launch the browser/app:
 1. Save the code CTRL-S in Visual Studio Code; and refresh the web page in browser. You should 
 see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
-
+   
+   >**Note:** If you are not able to find and edit the report, please access the same URL in chrome/different web browser.
+   
    ![](media/pbi10.jpg)
 
 1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Donut chart (2)**.
@@ -93,7 +96,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi53.jpg)
 
-1. Now, navigate to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and you'll be to visualize the new report.
+1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
 
    ![](media/pbi54.jpg)
 
@@ -105,7 +108,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi55.jpg)
 
-1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and save the code using **CTRL-S**.
+1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and save the code using **CTRL+S**.
 
    ![](media/pbi56.jpg)   
 
@@ -119,7 +122,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 3: Export to CSV
 
-1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL-S**.
+1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
 
    ![](media/pbi59.jpg)
 
@@ -198,7 +201,7 @@ In this part, we will create a role to enable row level security. In our case, w
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
-   ![](media/pbi75.jpg)    
+   ![](media/M4S12.png)    
 
 1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)**.
 
