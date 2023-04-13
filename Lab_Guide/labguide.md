@@ -164,7 +164,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
-   - Enter `[Store] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
+   - Enter `[Type] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
    - Finally, click on **Save (4)** button.
 
    ![](media/pbi67.jpg)
@@ -219,8 +219,14 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi44.jpg)
 
+1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
+
+   ![](media/M1S14.png)   
+
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
 specific filtering.
+
+   ![](media/pbi79.jpg)
 
 1. In this module, you have learned to embed a Power BI report with data security as per user’s context.
   
