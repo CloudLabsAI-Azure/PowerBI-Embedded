@@ -30,10 +30,6 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi41.jpg)
 
-1. From the taskbar, select the **Visual Studio Code** icon to open the application.
-
-   ![](media/pbi43.jpg) 
-
 1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings (2)**, and click on **Admin portal (3)** button.
 
    ![](media/pbi45.jpg)
@@ -54,15 +50,36 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi49.jpg)  
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**, then click on the **appsettings.json (2)** to open it, replace **client id, tenant id, client secret (3)** in the line 5,6, and 10 respectively. you can find the service principal details in the **Environment details (4)** tab. 
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
+
+   ![](media/M1S11.png)   
+
+1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
+
+   ![](media/M1S12new.png) 
+
+1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** dataset.
+
+   ![](media/M1S13new.png)   
+    
+1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
+
+   ![](media/M1S14new.png)   
+
+1. From the taskbar, select the **Visual Studio Code** icon to open the application.
+
+   ![](media/pbi43.jpg) 
+
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
 
    ![](media/M1S12_1.png)
+   
+1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId, TenantId, ClientSecret (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
-   - The **workspaceID**, **reportid**, and **datasetid** in lines 13, 14, and 15 are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
+   >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
-   ![](media/pbi42.jpg)
-
-1. Click on the Terminal and type in `dotnet run`, press enter to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
+   ![](media/M1S17new.png)
+1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
    ![](media/M1S13.png)
 
@@ -76,15 +93,14 @@ At the end of this workshop, you will learn how to –
 
 1. Navigate and explore the report and note the interactivity. Now, leave the browser open.
 
-1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59.
+1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
 
    ![](media/pbi51.jpg)
 
-1. Save the code CTRL-S in Visual Studio Code; and refresh the web page in browser. You should 
-see the same Wingtip Sales Analysis Report as a second report below the original report –
+1. Refresh the web page in browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
    
-   >**Note:** If you are not able to find and edit the report, please access the same URL in chrome/different web browser.
+   >**Note:** If you are not able to find and edit the report, please access the same URL in different web browser or in InPrivate mode.
    
    ![](media/pbi10.jpg)
 
@@ -184,10 +200,10 @@ In this part, we will create a role to enable row level security. In our case, w
 1. Select the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and click on **Select (2)**.
 
    ![](media/pbi71.jpg)
-
+   
    >**Note**: Please wait until the report gets published.
 
-   1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
 
    ![](media/pbi74.jpg)   
 
@@ -203,7 +219,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/M4S12.png)    
 
-1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)**.
+1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)** and save the code using **CTRL+S** .
 
    ![](media/pbi72.jpg) 
 
@@ -211,11 +227,11 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi73.jpg) 
     
-1. Like in Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters to reflect the new report “Sales and Returns Sample without RLS”.
+1. Like in Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters copied in previous steps to reflect the new report “Sales and Returns Sample without RLS”. Save the code using **CTRL+S**.
 
    ![](media/pbi78.jpg) 
 
-1. Click on the Terminal and type in **dotnet run** and enter to run the sample code.
+1. Click on the Terminal and type in **dotnet run** and press **Enter** to run the sample code.
 
    ![](media/pbi44.jpg)
 
