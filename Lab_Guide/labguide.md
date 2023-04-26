@@ -240,9 +240,11 @@ In this part, we will create a role to enable row level security. In our case, w
    ![](media/M1S14.png)   
 
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
-specific filtering.
+specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in PowerBI desktop application.
 
-   ![](media/pbi79.jpg)
+   ![](media/M4PBISR1.png)
+   
+   ![](media/M4PBISR2.png)
 
 1. In this module, you have learned to embed a Power BI report with data security as per user’s context.
   
