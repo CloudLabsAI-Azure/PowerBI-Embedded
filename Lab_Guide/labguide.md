@@ -79,9 +79,10 @@ At the end of this workshop, you will learn how to –
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
    ![](media/M1S17new.png)
+   
 1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
-   ![](media/M1S13.png)
+  ![](media/pbi44.jpg)
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
