@@ -52,7 +52,7 @@ At the end of this workshop, you will learn how to –
    
 1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
 
-   ![](media/img3.jpg)  
+   ![](media/img3.png)  
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
