@@ -30,9 +30,9 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi41.jpg)
 
-1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings (2)**, and click on **Admin portal (3)** button.
+1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings**, and click on **Admin portal (2)** button.
 
-   ![](media/pbi45.jpg)
+   ![](media/img1.png)
 
 1. Scroll down to Developer settings, **Enable (1)** the Allow service principals to use Power BI APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
@@ -46,9 +46,13 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi48.jpg)
 
-1. In the Access tab, search and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
+1. In the Manage access tab, select **+ Add people or groups**.
+   
+   ![](media/img2.png)
+   
+1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
 
-   ![](media/pbi49.jpg)  
+   ![](media/img3.png)  
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
@@ -74,7 +78,7 @@ At the end of this workshop, you will learn how to –
 
    ![](media/M1S12_1.png)
    
-1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
