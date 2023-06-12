@@ -163,7 +163,7 @@ except – now you have edit/modification capabilities:
 
 In this part, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
-1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open ** Sales and Returns Sample without RLS.pbix (3)** file.
+1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open **Sales and Returns Sample without RLS.pbix (3)** file.
 
    ![](media/pbi63.jpg)
 
@@ -185,7 +185,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
-   - Enter `[Type] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
+   - Enter `[Store] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
    - Finally, click on **Save (4)** button.
 
    ![](media/pbi67.jpg)
