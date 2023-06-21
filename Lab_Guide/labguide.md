@@ -64,7 +64,7 @@ At the end of this workshop, you will learn how to –
 
 1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** dataset.
 
-   ![](media/M1S13new.png)   
+   ![](media/pbi80.jpg)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
