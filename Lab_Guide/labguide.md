@@ -185,7 +185,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
-   - Enter `[Store] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
+   - Enter `[Type] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
    - Finally, click on **Save (4)** button.
 
    ![](media/pbi67.jpg)
