@@ -28,7 +28,7 @@ At the end of this workshop, you will learn how to –
 
 1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
 
-   ![](media/pbi41.jpg)
+   ![](media/updated-reports.png)
 
 1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings**, and click on **Admin portal (2)** button.
 
@@ -86,7 +86,7 @@ At the end of this workshop, you will learn how to –
    
 1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
-  ![](media/pbi44.jpg)
+   ![](media/pbi44.jpg)
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
