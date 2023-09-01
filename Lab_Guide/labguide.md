@@ -125,7 +125,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 2: Embedding Q&A
 
-1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is updated already.
+1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is already updated in **line #11**.
 
    ![](media/pbi55.jpg)
 
