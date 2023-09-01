@@ -143,7 +143,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 3: Export to CSV
 
-1. Navigate back to VS Code, comment line #12 to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
+1. Navigate back to VS Code and open `/wwwroot/js/index.js` file. Comment **line #12** to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
 
    ![](media/pbi59.jpg)
 
