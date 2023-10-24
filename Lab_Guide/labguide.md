@@ -10,7 +10,7 @@ At the end of this workshop, you will learn how to –
 
 ## Module 1: Embedding Your First Power BI report
 
-1. In browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
+1. In the browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
    ![](media/pbi39.jpg)
           
@@ -60,7 +60,7 @@ At the end of this workshop, you will learn how to –
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
-   ![](media/M1S12new.png) 
+   ![](media/select-wingtip-report.png) 
 
 1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** dataset.
 
@@ -73,6 +73,10 @@ At the end of this workshop, you will learn how to –
 1. From the taskbar, select the **Visual Studio Code** icon to open the application.
 
    ![](media/pbi43.jpg) 
+
+1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
+
+   ![](media/trust.jpg) 
 
 1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
 
@@ -102,10 +106,10 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi51.jpg)
 
-1. Refresh the web page in browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
+1. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
    
-   >**Note:** If you are not able to find and edit the report, please access the same URL in different web browser or in InPrivate mode.
+   >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate mode.
    
    ![](media/pbi10.jpg)
 
@@ -121,7 +125,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi54.jpg)
 
-   In this module, you have learnt to embed a report in Read and Edit mode.
+   In this module, you have learned to embed a report in Read and Edit mode.
 
 ### Module 2: Embedding Q&A
 
@@ -133,13 +137,13 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi56.jpg)   
 
-1. Navigate back to browser and refresh the web page. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
+1. Navigate back to the browser and refresh the web page. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
 
    ![](media/pbi57.jpg)
 
    - You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
 
-   In this module, you have learnt to embed Q&A into your web application.   
+   In this module, you have learned to embed Q&A into your web application.   
 
 ### Module 3: Export to CSV
 
@@ -155,7 +159,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi61.jpg)   
 
-1. in Which data do you want to export pop up, select **Summarized data (1)**, select **.csv (30,000-row max) (2)** as File format, and click on **Export (3)**. 
+1. In Which data do you want to export pop up, select **Summarized data (1)**, select **.csv (30,000-row max) (2)** as File format, and click on **Export (3)**. 
 
    ![](media/pbi62.jpg)
 
@@ -167,7 +171,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi63.jpg)
 
-1. If Enter your email address pop up appears, Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Continue**.
+1. If Enter your email address pop-up appears, Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Continue**.
 
    ![](media/pbi64.jpg)   
 
@@ -181,7 +185,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi66.jpg)
 
-1. Follow the below mentioned steps to create role.
+1. Follow the below-mentioned steps to create the role.
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
@@ -224,11 +228,11 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/M4S12.png)    
 
-1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)** and save the code using **CTRL+S** .
+1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)** and save the code using **CTRL+S**.
 
    ![](media/pbi72.jpg) 
 
-1. Review that the Username and role values to the new role which you have created in PBI Desktop is already updated.
+1. Review that the Username and role values to the new role that you have created in PBI Desktop are already updated.
 
    ![](media/pbi73.jpg) 
     
@@ -244,12 +248,12 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/M1S14.png)   
 
-1. Now, you can see that the numbers in the visual are slightly on the lower side due to user (john) 
-specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in PowerBI desktop application.
+1. Now, you can see that the numbers in the visual are slightly on the lower side due to the user (john) 
+specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in the PowerBI desktop application.
 
    ![](media/M4PBISR1.png)
    
    ![](media/M4PBISR2.png)
 
-1. In this module, you have learned to embed a Power BI report with data security as per user’s context.
+1. In this module, you have learned to embed a Power BI report with data security as per the user’s context.
   
