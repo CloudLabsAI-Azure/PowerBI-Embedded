@@ -7,7 +7,7 @@
    
    >Note: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.  
 
-1. To get the lab environment details, you can select the **Environment Details** tab. Under Environment tab, you can choose Azure Credentials or Service Principal based on what credentials you want to use. Additionally, the credentials will also be emailed to your email address provided at registration. Also, you can start, stop and restart virtual machines from the **Resources** tab.
+1. To get the lab environment details, you can select the **Environment Details** tab. Under Environment tab, you can choose **Azure Credentials** or **Service Principal** based on what credentials you want to use. Additionally, the credentials will also be emailed to your email address provided at registration. Also, you can start, stop and restart virtual machines from the **Resources** tab.
 
    ![](media/openai(2).png)
    
