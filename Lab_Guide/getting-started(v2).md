@@ -14,10 +14,10 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## **Exploring Your Lab Resources**
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Explore Lab Resources](../Images/env.png)
- 
+  ![](media/miw(3).png)
+
 ## **Utilizing the Split Window Feature**
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
@@ -28,7 +28,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](../Images/res.png)
+  ![](media/res.png)
  
 ## **Let's Get Started with Azure Portal**
  
