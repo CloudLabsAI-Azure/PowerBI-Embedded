@@ -30,29 +30,29 @@ At the end of this workshop, you will learn how to –
 
    ![](media/updated-reports.png)
 
-1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings**, and click on **Admin portal (2)** button.
+1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
 
-   ![](media/img1.png)
+   ![](media/Mod1S6.png)
 
-1. Scroll down to Developer settings, **Enable (1)** the Allow service principals to use Power BI APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-   ![](media/pbi46.jpg)
+   ![](media/Mod1S7.png)
 
-1. Scroll down to Admin API settings, **Enable (1)** the Allow service principals to use read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service proncipals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-   ![](media/pbi47.jpg)   
+   ![](media/Mod1S8.png)   
 
 1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
-   ![](media/pbi48.jpg)
+   ![](media/Mod1S9.png)
 
 1. In the Manage access tab, select **+ Add people or groups**.
    
-   ![](media/img2.png)
+   ![](media/Mod1S10.png)
    
-1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
+1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
-   ![](media/img3.png)  
+   ![](media/Mod1S11.png)  
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
@@ -60,15 +60,15 @@ At the end of this workshop, you will learn how to –
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
-   ![](media/select-wingtip-report.png) 
+   ![](media/Mod1S13.png) 
 
-1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** dataset.
+1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
 
-   ![](media/pbi80.jpg)   
+   ![](media/Mod1S14.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
-   ![](media/M1S14new.png)   
+   ![](media/Mod1S15.png)   
 
 1. From the taskbar, select the **Visual Studio Code** icon to open the application.
 
@@ -137,7 +137,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi56.jpg)   
 
-1. Navigate back to the browser and refresh the web page. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
+1. Navigate back to the browser and refresh the web page and scroll down to the bottom. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
 
    ![](media/pbi57.jpg)
 
@@ -220,9 +220,9 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi75.jpg) 
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** semantic model.
 
-   ![](media/pbi76.jpg)   
+   ![](media/Mod4S12.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
