@@ -56,7 +56,7 @@ At the end of this workshop, you will learn how to –
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
-   ![](media/M1S11.png)   
+   ![](media/wingtip-report.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
@@ -74,14 +74,14 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi43.jpg) 
 
-1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
-
-   ![](media/trust.jpg) 
-
 1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
 
    ![](media/M1S12_1.png)
-   
+
+1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
+
+   ![](media/trust.png) 
+  
 1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
@@ -123,7 +123,7 @@ except – now you have edit/modification capabilities:
 
 1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
 
-   ![](media/pbi54.jpg)
+   ![](media/wingtip-update-report.png)
 
    In this module, you have learned to embed a report in Read and Edit mode.
 
@@ -210,11 +210,15 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi71.jpg)
    
-   >**Note**: Please wait until the report gets published.
+   > **Note**: If it ask for Replace this dataset? click on **Replace**
+
+     ![](media/replace.png) 
+
+   > **Note**: Please wait until the report gets published.
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
 
-   ![](media/pbi74.jpg)   
+   ![](media/wingtip-update-report.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
