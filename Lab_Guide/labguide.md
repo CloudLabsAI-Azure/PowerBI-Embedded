@@ -74,13 +74,14 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi43.jpg) 
 
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
+
+   ![](media/M1S12_1.png)
+
 1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
 
    ![](media/trust.jpg) 
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
-
-   ![](media/M1S12_1.png)
    
 1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
