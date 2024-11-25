@@ -49,9 +49,9 @@ Welcome to your Power BI Embedded Hands-On Lab! This lab is designed to give you
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![Create storage by clicking confirm.](../media/GettingStarted/gspage01.png)  
+   ![Create storage by clicking confirm.](./media/GettingStarted/gspage01.png)  
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
@@ -59,64 +59,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-   ![Create storage by clicking confirm.](../media/GettingStarted/ai-900-gettingstarted-04.png)
+   ![Create storage by clicking confirm.](./media/GettingStarted/ai-900-gettingstarted-04.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](../media/GS8.png)
+   ![](./media/GS8.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](../media/GS5.png)
-
-## Lab Validation
-
-1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
-
-   ![Inline Validation](../media/inline-validation.png)
-
-1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
-
-   ![Lab Validation](../media/lab-validation.png)
-
-1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
- 
-## Let's Get Started with Azure Portal
- 
-1. On your virtual machine, click on the Azure Portal icon as shown below:
- 
-    ![](../media/GS1.png)
- 
-1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
- 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-      ![](../media/GS2.png "Enter Email")
- 
-3. Next, provide your password:
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
- 
-      ![](../media/GS3.png "Enter Password")
-
-1. If you see the pop-up Action Required, click **Ask Later**.
-
-   ![](../media/asklater.png)
-
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
- 
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-   ![](../media/GS9.png)
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+  ![](./media/GS5.png) 
 
 ## Support Contact
  
