@@ -28,7 +28,7 @@ The architecture for integrating **Power BI Embedded** into applications involve
 
 ## Architechture Diagram
 
-![](../media/archdiagram.JPG)
+![](./media/arch01.JPG)
 
 ## Explanation of Components
 
