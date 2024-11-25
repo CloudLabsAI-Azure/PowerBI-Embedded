@@ -49,7 +49,7 @@ Welcome to your Power BI Embedded Hands-On Lab! This lab is designed to give you
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![Create storage by clicking confirm.](./media/GettingStarted/gspage01.png)  
+   ![Create storage by clicking confirm.](./media/gspage01.png)  
 
 ## Virtual Machine & Lab Guide
  
@@ -59,7 +59,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-   ![Create storage by clicking confirm.](./media/GettingStarted/ai-900-gettingstarted-04.png)
+   ![Create storage by clicking confirm.](./media/ai-900-gettingstarted-04.png)
  
 ## Utilizing the Split Window Feature
  
@@ -83,6 +83,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](../media/GS4.png)
+![](./media/GS4.png)
 
 ### Happy Learning!!
