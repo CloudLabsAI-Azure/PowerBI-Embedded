@@ -283,7 +283,5 @@ In this lab you have covered the following:
 - Exported data from a Power BI visual for further analysis
 - Configured row-level security to ensure data security based on user context
 
-
-
 ### You have successfully completed the lab
   
