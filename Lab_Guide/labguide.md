@@ -1,14 +1,23 @@
 # Power BI Embedded Workshop Guide
 
-## Outcome
+### Estimated Duration: 3 Hours
 
-At the end of this workshop, you will learn how to –
-1. Module 1: Embed a Power BI report using App Owns Data embedding
-1. Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
-1. Module 3: Understand exporting a visual’s data 
-1. Module 4: Enable data security based on user context
+## Overview
+
+**Power BI Embedded** enables the integration of interactive data visualizations into applications. It allows embedding of **Power BI** reports, managing authentication through **Azure AD**, and using the **Power BI REST API** to deliver embedded business intelligence features.
+
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+- **Module 1**: Embed a Power BI report using App Owns Data embedding
+- **Module 2**: Embed Q&A (Question & Answer) for a Power BI dataset
+- **Module 3**: Understand exporting a visual’s data 
+- **Module 4**: Enable data security based on user context
 
 ## Module 1: Embedding Your First Power BI report
+
+In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
 1. In the browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
@@ -129,6 +138,8 @@ except – now you have edit/modification capabilities:
 
 ### Module 2: Embedding Q&A
 
+In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
+
 1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is already updated in **line #11**.
 
    ![](media/pbi55.jpg)
@@ -146,6 +157,8 @@ except – now you have edit/modification capabilities:
    In this module, you have learned to embed Q&A into your web application.   
 
 ### Module 3: Export to CSV
+
+In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
 
 1. Navigate back to VS Code and open `/wwwroot/js/index.js` file. Comment **line #12** to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
 
@@ -165,7 +178,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 4: Embedding with RLS
 
-In this part, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
+In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
 1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open **Sales and Returns Sample without RLS.pbix (3)** file.
 
