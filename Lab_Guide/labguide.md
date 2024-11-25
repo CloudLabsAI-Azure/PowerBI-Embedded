@@ -273,4 +273,17 @@ specific filtering. You can compare the **Power BI Embedded Sample** report with
    ![](media/M4PBISR2.png)
 
 1. In this module, you have learned to embed a Power BI report with data security as per the user’s context.
+
+## Summary 
+
+In this lab you have covered the following:
+
+- Embedded a Power BI report using App Owns Data embedding
+- Integrated the Q&A feature in Power BI for natural language queries
+- Exported data from a Power BI visual for further analysis
+- Configured row-level security to ensure data security based on user context
+
+
+
+### You have successfully completed the lab
   
