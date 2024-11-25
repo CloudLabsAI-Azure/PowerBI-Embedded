@@ -57,7 +57,7 @@ In this module, you will embed a Power BI report into your application using the
 
 1. In the Manage access tab, select **+ Add people or groups**.
    
-   ![](media/Mod1S10.png)
+   ![](media/Mod1S100.png)
    
 1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
