@@ -1,0 +1,17 @@
+[
+    {
+      "Name": "PowerBI Embedded Lab",
+      "Language": "English",
+      "Files":[
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/PowerBI-Embedded/main/Lab_Guide/getting-started(1).md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/PowerBI-Embedded/main/Lab_Guide/labguide.md",
+          "Order": 2
+        }
+      ]
+    }
+  ]
+  
