@@ -117,9 +117,9 @@ In this module, you will embed a Power BI report into your application using the
 
 1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
 
-   ![](media/connectionisntprivate.png)
+      ![](media/connectionisntprivate.png)
 
-   ![](media/Continuetolocalhost.png)
+      ![](media/Continuetolocalhost.png)
 
 
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
