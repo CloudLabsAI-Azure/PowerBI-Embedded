@@ -23,89 +23,89 @@ In this module, you will embed a Power BI report into your application using the
    
    ![](media/pbi39u.png)
           
-1. Now enter the following password and click on **Sign in**.
+2. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
    ![](media/pbi33u.png)
 
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+3. If you see the pop-up **Stay Signed in?**, select **No**.
 
     >**Note**: You can skip the steps above if the system does not prompt you to sign in and allows direct login.
 
-1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
+4. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
 
    ![](media/pbi40.jpg)
 
-1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
+5. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
 
    ![](media/updated-reportsu.png)
 
-1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
+6. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
 
    ![](media/Mod1S6.png)
 
-1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+7. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/Mod1S7.png)
  
    >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+8. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/Mod1S8.png)   
 
    >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
-1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
+9. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
    ![](media/Mod1S9.png)
 
-1. In the Manage access tab, select **+ Add people or groups**.
+10. In the Manage access tab, select **+ Add people or groups**.
    
    ![](media/Mod1S100.png)
    
-1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
+11. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
    ![](media/Mod1S11.png)  
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
+12. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
    ![](media/wingtip-report.png)   
 
-1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
+13. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
    ![](media/Mod1S13.png) 
 
-1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
+14. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
 
    ![](media/Mod1S14.png)   
     
-1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
+15. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
    ![](media/Mod1S15.png)   
 
-1. From the taskbar, select the **Visual Studio Code** icon to open the application.
+16. From the taskbar, select the **Visual Studio Code** icon to open the application.
 
    ![](media/pbi43.jpg) 
 
    >**Note** : The application might take a few seconds to load.
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
+17. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
 
    ![](media/M1S12_1.png)
 
-1. If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
+18. If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
 
    ![](media/trust.png) 
   
-1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+19. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
    ![](media/M1S17new.png)
    
-1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
+20. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
    ![](media/pbi44.jpg)
    
