@@ -111,35 +111,35 @@ In this module, you will embed a Power BI report into your application using the
    
    >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
 
-1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
+21. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
    ![](media/M1S14.png)
 
-1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
+22. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
 
    ![](media/connectionisntprivate.png)
 
    ![](media/Continuetolocalhost.png)
 
 
-1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
+23. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
-   ![](media/pbi7.jpg)
+    ![](media/pbi7.jpg)
 
-1. Navigate and explore the report and note the interactivity. Now, leave the browser open.
+24. Navigate and explore the report and note the interactivity. Now, leave the browser open.
 
-1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
+25. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
 
-   ![](media/pbi51.jpg)
+    ![](media/pbi51.jpg)
 
-1. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
+26. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
    
    >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate mode.
    
    ![](media/pbi10.jpg)
 
-1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Donut chart (2)**.
+27. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Donut chart (2)**.
 
    ![](media/pbi52.jpg)
 
@@ -147,11 +147,11 @@ except – now you have edit/modification capabilities:
 
    ![](media/chartupdate.png)
 
-1. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
+28. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
 
    ![](media/pbi53.jpg)
 
-1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
+29. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
 
    ![](media/wingtip-update-reportu.png)
 
