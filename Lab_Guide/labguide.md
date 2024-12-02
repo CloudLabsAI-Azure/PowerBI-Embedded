@@ -89,7 +89,7 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/pbi43.jpg) 
 
->**Note** : The application might take a few seconds to load.
+   >**Note** : The application might take a few seconds to load.
 
 1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
 
@@ -111,27 +111,25 @@ In this module, you will embed a Power BI report into your application using the
    
    >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
 
-
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
    ![](media/M1S14.png)
 
 1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
 
-   ![](media/connectionisntprivate.png)
+      ![](media/connectionisntprivate.png)
 
-   ![](media/Continuetolocalhost.png)
-
+      ![](media/Continuetolocalhost.png)
 
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
-   ![](media/pbi7.jpg)
+    ![](media/pbi7.jpg)
 
 1. Navigate and explore the report and note the interactivity. Now, leave the browser open.
 
 1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
 
-   ![](media/pbi51.jpg)
+    ![](media/pbi51.jpg)
 
 1. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
