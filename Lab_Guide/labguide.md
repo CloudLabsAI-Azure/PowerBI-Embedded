@@ -12,15 +12,17 @@ At the end of this workshop, you will learn how to –
 
 1. In the browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
-   ![](media/pbi39.jpg)
+   ![](media/pbi39u.png)
           
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-   ![](media/pbi33.jpg)
+   ![](media/pbi33u.png)
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    >**Note**: You can skip the steps above if the system does not prompt you to sign in and allows direct login.
 
 1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
 
@@ -28,7 +30,7 @@ At the end of this workshop, you will learn how to –
 
 1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
 
-   ![](media/updated-reports.png)
+   ![](media/updated-reportsu.png)
 
 1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
 
@@ -37,10 +39,14 @@ At the end of this workshop, you will learn how to –
 1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/Mod1S7.png)
+ 
+   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service proncipals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
    ![](media/Mod1S8.png)   
+
+   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
 1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
@@ -74,11 +80,13 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi43.jpg) 
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
+>**Note** : The application might take a few seconds to load.
+
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
 
    ![](media/M1S12_1.png)
 
-1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
+1. If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
 
    ![](media/trust.png) 
   
@@ -91,10 +99,20 @@ At the end of this workshop, you will learn how to –
 1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
    ![](media/pbi44.jpg)
+   
+   >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
+
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
    ![](media/M1S14.png)
+
+1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
+
+   ![](media/connectionisntprivate.png)
+
+   ![](media/Continuetolocalhost.png)
+
 
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
@@ -117,13 +135,17 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi52.jpg)
 
+   >**Note** : You can also click on the ellipsis (...) on the chart, choose New visual calculation, and select the Donut chart to update the embedded report.
+
+   ![](media/chartupdate.png)
+
 1. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
 
    ![](media/pbi53.jpg)
 
 1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
 
-   ![](media/wingtip-update-report.png)
+   ![](media/wingtip-update-reportu.png)
 
    In this module, you have learned to embed a report in Read and Edit mode.
 
@@ -218,7 +240,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
 
-   ![](media/wingtip-update-report.png)   
+   ![](media/Sales&ReturnsSamplewithoutRLSreport.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
@@ -226,7 +248,7 @@ In this part, we will create a role to enable row level security. In our case, w
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** semantic model.
 
-   ![](media/Mod4S12.png)   
+   ![](media/Sales&ReturnsSamplewithoutRLSsematic.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
@@ -248,9 +270,11 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi44.jpg)
 
+   >**Note** : If the sample code from Module 1 is still running, use Ctrl + C to stop it, and then execute the `dotnet run` command.
+
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
-   ![](media/M1S14.png)   
+   ![](media/M1S14.png)  
 
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to the user (john) 
 specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in the PowerBI desktop application.
