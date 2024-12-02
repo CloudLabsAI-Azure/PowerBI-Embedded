@@ -80,6 +80,8 @@ At the end of this workshop, you will learn how to –
 
    ![](media/pbi43.jpg) 
 
+>**Note** : The application might take a few seconds to load.
+
 1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
 
    ![](media/M1S12_1.png)
