@@ -121,7 +121,6 @@ In this module, you will embed a Power BI report into your application using the
 
       ![](media/Continuetolocalhost.png)
 
-
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
     ![](media/pbi7.jpg)
