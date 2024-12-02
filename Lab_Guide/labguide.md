@@ -107,10 +107,9 @@ In this module, you will embed a Power BI report into your application using the
    
 1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
-     ![](media/pbi44.jpg)
+   ![](media/pbi44.jpg)
    
-      >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
-
+   >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
