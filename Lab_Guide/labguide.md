@@ -1,26 +1,37 @@
 # Power BI Embedded Workshop Guide
 
-## Outcome
+### Estimated Duration: 3 Hours
 
-At the end of this workshop, you will learn how to –
-1. Module 1: Embed a Power BI report using App Owns Data embedding
-1. Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
-1. Module 3: Understand exporting a visual’s data 
-1. Module 4: Enable data security based on user context
+## Overview
+
+**Power BI Embedded** enables the integration of interactive data visualizations into applications. It allows embedding of **Power BI** reports, managing authentication through **Azure AD**, and using the **Power BI REST API** to deliver embedded business intelligence features.
+
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+- **Module 1**: Embed a Power BI report using App Owns Data embedding
+- **Module 2**: Embed Q&A (Question & Answer) for a Power BI dataset
+- **Module 3**: Understand exporting a visual’s data 
+- **Module 4**: Enable data security based on user context
 
 ## Module 1: Embedding Your First Power BI report
 
+In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
+
 1. In the browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
-   ![](media/pbi39.jpg)
+   ![](media/pbi39u.png)
           
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-   ![](media/pbi33.jpg)
+   ![](media/pbi33u.png)
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    >**Note**: You can skip the steps above if the system does not prompt you to sign in and allows direct login.
 
 1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
 
@@ -28,60 +39,66 @@ At the end of this workshop, you will learn how to –
 
 1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
 
-   ![](media/updated-reports.png)
+   ![](media/updated-reportsu.png)
 
-1. From Power BI home page, Click on the **ellipse (1)** button, select the **Settings**, and click on **Admin portal (2)** button.
+1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
 
-   ![](media/img1.png)
+   ![](media/Mod1S6.png)
 
-1. Scroll down to Developer settings, **Enable (1)** the Allow service principals to use Power BI APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-   ![](media/pbi46.jpg)
+   ![](media/Mod1S7.png)
+ 
+   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
-1. Scroll down to Admin API settings, **Enable (1)** the Allow service principals to use read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-   ![](media/pbi47.jpg)   
+   ![](media/Mod1S8.png)   
+
+   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
 1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
-   ![](media/pbi48.jpg)
+   ![](media/Mod1S9.png)
 
 1. In the Manage access tab, select **+ Add people or groups**.
    
-   ![](media/img2.png)
+   ![](media/Mod1S100.png)
    
-1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, select **Admin (2)** privilege from the drop down, and click on **Add (3)** button. Once added, click on **close (4)** button to close the tab.
+1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
-   ![](media/img3.png)  
+   ![](media/Mod1S11.png)  
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
-   ![](media/M1S11.png)   
+   ![](media/wingtip-report.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
-   ![](media/select-wingtip-report.png) 
+   ![](media/Mod1S13.png) 
 
-1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** dataset.
+1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
 
-   ![](media/pbi80.jpg)   
+   ![](media/Mod1S14.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
-   ![](media/M1S14new.png)   
+   ![](media/Mod1S15.png)   
 
 1. From the taskbar, select the **Visual Studio Code** icon to open the application.
 
    ![](media/pbi43.jpg) 
 
-1. On the **Do you trust the authors of the files in this folder?** pop-up click on **Yes, I trust the authors**.
+   >**Note** : The application might take a few seconds to load.
 
-   ![](media/trust.jpg) 
-
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST (1)**. 
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
 
    ![](media/M1S12_1.png)
-   
+
+1. If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
+
+   ![](media/trust.png) 
+  
 1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
@@ -91,20 +108,28 @@ At the end of this workshop, you will learn how to –
 1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
    ![](media/pbi44.jpg)
+   
+   >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
    ![](media/M1S14.png)
 
+1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
+
+      ![](media/connectionisntprivate.png)
+
+      ![](media/Continuetolocalhost.png)
+
 1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
 
-   ![](media/pbi7.jpg)
+    ![](media/pbi7.jpg)
 
 1. Navigate and explore the report and note the interactivity. Now, leave the browser open.
 
 1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
 
-   ![](media/pbi51.jpg)
+    ![](media/pbi51.jpg)
 
 1. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
 except – now you have edit/modification capabilities:
@@ -117,17 +142,23 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi52.jpg)
 
+   >**Note** : You can also click on the ellipsis (...) on the chart, choose New visual calculation, and select the Donut chart to update the embedded report.
+
+   ![](media/chartupdate.png)
+
 1. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
 
    ![](media/pbi53.jpg)
 
 1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
 
-   ![](media/pbi54.jpg)
+   ![](media/wingtip-update-reportu.png)
 
    In this module, you have learned to embed a report in Read and Edit mode.
 
 ### Module 2: Embedding Q&A
+
+In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
 
 1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is already updated in **line #11**.
 
@@ -137,7 +168,7 @@ except – now you have edit/modification capabilities:
 
    ![](media/pbi56.jpg)   
 
-1. Navigate back to the browser and refresh the web page. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
+1. Navigate back to the browser and refresh the web page and scroll down to the bottom. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
 
    ![](media/pbi57.jpg)
 
@@ -146,6 +177,8 @@ except – now you have edit/modification capabilities:
    In this module, you have learned to embed Q&A into your web application.   
 
 ### Module 3: Export to CSV
+
+In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
 
 1. Navigate back to VS Code and open `/wwwroot/js/index.js` file. Comment **line #12** to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
 
@@ -165,7 +198,7 @@ except – now you have edit/modification capabilities:
 
 ### Module 4: Embedding with RLS
 
-In this part, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
+In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
 1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open **Sales and Returns Sample without RLS.pbix (3)** file.
 
@@ -210,19 +243,23 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi71.jpg)
    
-   >**Note**: Please wait until the report gets published.
+   > **Note**: If it ask for Replace this dataset? click on **Replace**
+
+     ![](media/replace.png) 
+
+   > **Note**: Please wait until the report gets published.
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
 
-   ![](media/pbi74.jpg)   
+   ![](media/Sales&ReturnsSamplewithoutRLSreport.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
    ![](media/pbi75.jpg) 
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** dataset.
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** semantic model.
 
-   ![](media/pbi76.jpg)   
+   ![](media/Sales&ReturnsSamplewithoutRLSsematic.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
@@ -244,9 +281,11 @@ In this part, we will create a role to enable row level security. In our case, w
 
    ![](media/pbi44.jpg)
 
+   >**Note** : If the sample code from Module 1 is still running, use Ctrl + C to stop it, and then execute the `dotnet run` command.
+
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
-   ![](media/M1S14.png)   
+   ![](media/M1S14.png)  
 
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to the user (john) 
 specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in the PowerBI desktop application.
@@ -256,4 +295,15 @@ specific filtering. You can compare the **Power BI Embedded Sample** report with
    ![](media/M4PBISR2.png)
 
 1. In this module, you have learned to embed a Power BI report with data security as per the user’s context.
+
+## Summary 
+
+In this lab you have covered the following:
+
+- Embedded a Power BI report using App Owns Data embedding
+- Integrated the Q&A feature in Power BI for natural language queries
+- Exported data from a Power BI visual for further analysis
+- Configured row-level security to ensure data security based on user context
+
+### You have successfully completed the lab
   
