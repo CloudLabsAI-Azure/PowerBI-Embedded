@@ -1,6 +1,6 @@
-# Power BI Embedded Workshop Guide
+# Power BI Embedded
 
-### Estimated Duration: 3 Hours
+### Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -19,9 +19,11 @@ You will be able to complete the following tasks:
 
 In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
-1. In the browser, login into `https://app.powerbi.com/`. Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
+1. Search for Microsoft Edge and select it. Login into `https://app.powerbi.com/` by providing the below E-Mail:
+
+   - **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
-   ![](media/pbi39u.png)
+      ![](media/pbi39u.png)
           
 1. Now enter the following password and click on **Sign in**.
    
@@ -45,17 +47,21 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/Mod1S6.png)
 
-1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
 
-   ![](media/Mod1S7.png)
+      ![](media/Mod1S7.png)
+
+      >**Note** : If the Apply option is greyed out, un-select **PowerbiSDP** and select again.
  
-   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
+      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (Recommended) (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-   ![](media/Mod1S8.png)   
+      ![](media/Mod1S8.png)   
 
-   >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
+      >**Note** : If the Apply option is greyed out, un-select **PowerbiSDP** and select again.
+
+      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
 1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
@@ -64,8 +70,10 @@ In this module, you will embed a Power BI report into your application using the
 1. In the Manage access tab, select **+ Add people or groups**.
    
    ![](media/Mod1S100.png)
+
+    >**Note**: If you are unable to see the window, please open it via InPrivate Window. 
    
-1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **arrow (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
+1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **dropdown (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
    ![](media/Mod1S11.png)  
 
@@ -91,13 +99,13 @@ In this module, you will embed a Power BI report into your application using the
 
    >**Note** : The application might take a few seconds to load.
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **POWER BI EMBEDDED WORKSHOP_LATEST**. 
+1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **Power BI Embedded workshop_latest**. 
 
-   ![](media/M1S12_1.png)
+      ![](media/M1S12_1.png)
 
-1. If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
+      >**Note**: If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
 
-   ![](media/trust.png) 
+      ![](media/trust.png) 
   
 1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
