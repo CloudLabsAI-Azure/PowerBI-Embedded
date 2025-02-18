@@ -1,6 +1,6 @@
-# POWER BI EMBEDDED HANDS ON LAB
+# Power BI EMBEDDED
 
-### Overall Estimated Duration: 3 hours
+### Overall Estimated Duration: 4 hours
 
 ## Overview
 
