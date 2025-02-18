@@ -19,7 +19,7 @@ You will be able to complete the following tasks:
 
 In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
-1. Search for Microsoft Edge and select it. Login into `https://app.powerbi.com/` by providing the below E-Mail:
+1. Click on **Microsoft Edge** from the desktop. Login into `https://app.powerbi.com/` by providing the below E-Mail:
 
    - **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
    
@@ -47,19 +47,19 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/Mod1S6.png)
 
-1. Scroll down to Developer settings, if not enabled then **Enable (1)** the Service principals can use Fabric APIs. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
+1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
 
       ![](media/Mod1S7.png)
 
-      >**Note** : If the Apply option is greyed out, un-select **PowerbiSDP** and select again.
+      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
  
       >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the Service principals can access read-only Admin APIs. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
       ![](media/Mod1S8.png)   
 
-      >**Note** : If the Apply option is greyed out, un-select **PowerbiSDP** and select again.
+      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
 
       >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
@@ -73,7 +73,7 @@ In this module, you will embed a Power BI report into your application using the
 
     >**Note**: If you are unable to see the window, please open it via InPrivate Window. 
    
-1. In the next window thta opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **dropdown (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
+1. In the next window that opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **dropdown (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
 
    ![](media/Mod1S11.png)  
 
@@ -113,11 +113,15 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/M1S17new.png)
    
-1. Click on the Terminal and type in `dotnet run`, press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
+1. Click on the **Ellipsis (...) (1)** from the top, click on **Terminal (2)** and select **New Terminal (3)**.
 
-   ![](media/pbi44.jpg)
+1. Run the below command and press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
+
+    ```
+   dotnet run
+    ```
    
-   >**Note** : If you're encountering any errors, try running the following command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
+   >**Note** : If you're encountering any errors, try running this command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
 
 1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
 
