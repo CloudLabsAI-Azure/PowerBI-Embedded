@@ -172,7 +172,7 @@ except – now you have edit/modification capabilities:
 
 In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
 
-1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, the **Dataset ID** is already updated in **line #11**.
+1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, verify if the **Dataset ID** is already updated in **line #11**.
 
    ![](media/pbi55.jpg)
 
@@ -180,7 +180,7 @@ In this module, you will integrate the Q&A feature in Power BI to allow users to
 
    ![](media/pbi56.jpg)   
 
-1. Navigate back to the browser and refresh the web page and scroll down to the bottom. click on **Ask a question (1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
+1. Navigate back to the browser and refresh the web page and scroll down to the bottom. click on **Ask a question about your data(1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
 
    ![](media/pbi57.jpg)
 
