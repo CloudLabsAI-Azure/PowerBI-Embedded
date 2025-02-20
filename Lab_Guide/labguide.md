@@ -77,7 +77,7 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/Mod1S11.png)  
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
+1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select **Wingtip Sales Analysis (2)** report.
 
    ![](media/bi2.png)   
 
@@ -85,7 +85,7 @@ In this module, you will embed a Power BI report into your application using the
 
    ![](media/Mod1S13.png) 
 
-1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
+1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select **Wingtip Sales Analysis (2)** semantic model.
 
    ![](media/bi1.png)   
     
