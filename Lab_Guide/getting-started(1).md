@@ -47,31 +47,33 @@ Welcome to your Power BI Embedded Hands-On Lab! This lab is designed to give you
 
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![Create storage by clicking confirm.](./media/gspage01.png)  
-
-## Virtual Machine & Lab Guide
- 
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+   ![](./media/emb1.png)
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
-
-   ![Create storage by clicking confirm.](./media/ai-900-gettingstarted-04.png)
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+   ![](./media/emb2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media/GS8.png)
- 
+   ![](./media/emb3.png)
+
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+   ![](./media/new-get-start-25-4.png)
+
+## Lab Guide Zoom In/Zoom Out
  
-  ![](./media/GS5.png) 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![](./media/new-get-start-25-6.png) 
 
 ## Support Contact
  
