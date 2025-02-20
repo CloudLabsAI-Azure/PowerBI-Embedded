@@ -79,7 +79,7 @@ In this module, you will embed a Power BI report into your application using the
 
 1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** report.
 
-   ![](media/wingtip-report.png)   
+   ![](media/bi2.png)   
 
 1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
 
@@ -87,7 +87,7 @@ In this module, you will embed a Power BI report into your application using the
 
 1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Wingtip Sales Analysis (2)** semantic model.
 
-   ![](media/Mod1S14.png)   
+   ![](media/bi1.png)   
     
 1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
 
@@ -114,6 +114,8 @@ In this module, you will embed a Power BI report into your application using the
    ![](media/M1S17new.png)
    
 1. Click on the **Ellipsis (...) (1)** from the top, click on **Terminal (2)** and select **New Terminal (3)**.
+
+   ![](media/emb4.png)
 
 1. Run the below command and press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
 
@@ -289,9 +291,15 @@ In this module, we will create a role to enable row level security. In our case,
 
    ![](media/pbi78.jpg) 
 
-1. Click on the Terminal and type in **dotnet run** and press **Enter** to run the sample code.
+1. Click on the **Ellipsis (...) (1)** from the top, click on **Terminal (2)** and select **New Terminal (3)**.
 
-   ![](media/pbi44.jpg)
+      ![](media/emb4.png)
+
+1. Run the below command and press **Enter** to run the sample code.
+
+    ```
+   dotnet run
+    ```
 
    >**Note** : If the sample code from Module 1 is still running, use Ctrl + C to stop it, and then execute the `dotnet run` command.
 
