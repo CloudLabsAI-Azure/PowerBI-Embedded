@@ -19,50 +19,6 @@ You will be able to complete the following tasks:
 
 In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
-1. Click on **Microsoft Edge** from the desktop. Login into `https://app.powerbi.com/` by providing the below E-Mail:
-
-   - **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Submit**.  
-   
-      ![](media/pbi39u.png)
-          
-1. Now enter the following password and click on **Sign in**.
-   
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
-   
-   ![](media/pbi33u.png)
-
-1. If you see the pop-up **Stay Signed in?**, select **No**.
-
-    >**Note**: You can skip the steps above if the system does not prompt you to sign in and allows direct login.
-
-1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
-
-   ![](media/pbi40.jpg)
-
-1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
-
-   ![](media/updated-reportsu.png)
-
-1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
-
-   ![](media/Mod1S6.png)
-
-1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
-
-      ![](media/Mod1S7.png)
-
-      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
- 
-      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
-
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
-
-      ![](media/Mod1S8.png)   
-
-      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
-
-      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
-
 1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
 
    ![](media/Mod1S9.png)
@@ -325,5 +281,8 @@ In this lab you have covered the following:
 - Exported data from a Power BI visual for further analysis
 - Configured row-level security to ensure data security based on user context
 
-### You have successfully completed the lab
+## You have successfully completed the Hands-on lab.
+
+By completing this hands-on lab on Power BI Embedded, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
+
   

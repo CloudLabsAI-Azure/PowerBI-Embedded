@@ -1,4 +1,4 @@
-# Power BI EMBEDDED
+# Power BI Embedded Hands On Lab
 
 ### Overall Estimated Duration: 4 hours
 
@@ -51,9 +51,13 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
    ![](./media/emb1.png)
  
+## Virtual Machine & Lab Guide
+
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure credentials. Click on the **Environment** option to verify the credentials.
  
    ![](./media/emb2.png)
  
@@ -65,26 +69,83 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **start, stop**, or **restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
    ![](./media/new-get-start-25-4.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
    ![](./media/new-get-start-25-6.png) 
 
-## Support Contact
+## Let's Get Started with Power BI Portal
  
+1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
+
+   ```
+   https://app.powerbi.com/
+   ```
+
+2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit**.
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+      ![](media/pbi39u.png)
+
+3. Now enter the following password and click on **Sign in**.
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+      ![](media/pbi33u.png)
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+   ![02](../Images/12062025(3).png)
+
+1. You should be able to view the Power BI Portal.
+
+   ![image](https://github.com/user-attachments/assets/c70e25c2-4172-4818-b393-c479bf24595a)
+
+1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
+
+   ![](media/pbi40.jpg)
+
+1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
+
+   ![](media/updated-reportsu.png)
+
+1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
+
+   ![](media/Mod1S6.png)
+
+1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
+
+      ![](media/Mod1S7.png)
+
+      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
+ 
+      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
+
+1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+
+      ![](media/Mod1S8.png)   
+
+      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
+
+      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
+
+## Support Contact
+
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
+
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+   
+   ![](./media/GS4.png)
 
-![](./media/GS4.png)
-
-### Happy Learning!!
+## Happy Learning!!
