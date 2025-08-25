@@ -49,7 +49,7 @@ Welcome to your Power BI Embedded Hands-On Lab! This lab is designed to give you
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](./media/emb1.png)
+   ![](./media2/access.png)
  
 ## Virtual Machine & Lab Guide
 
@@ -59,25 +59,25 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab. Here, you will find the Azure credentials. Click on the **Environment** option to verify the credentials.
  
-   ![](./media/emb2.png)
- 
+   ![](./media2/env.png)
+
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media/emb3.png)
+   ![](./media2/split.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to **start, stop**, or **restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](./media/new-get-start-25-4.png)
+   ![](./media2/res.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](./media/new-get-start-25-6.png) 
+   ![](./media2/zoom.png)
 
 ## Let's Get Started with Power BI Portal
  
@@ -87,37 +87,37 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    https://app.powerbi.com/
    ```
 
-2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit**.
+2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
  
-      ![](media/pbi39u.png)
+      ![](media2/email.png)
 
-3. Now enter the following password and click on **Sign in**.
+3. Now enter the following password and click on **Sign in (2)**.
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)**
  
-      ![](media/pbi33u.png)
+      ![](media2/pass.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-   ![02](../Images/12062025(3).png)
+    ![](./media2/signin.png)
 
 1. You should be able to view the Power BI Portal.
 
-   ![image](https://github.com/user-attachments/assets/c70e25c2-4172-4818-b393-c479bf24595a)
+    ![](./media2/powerbi.png)
 
-1. From the side blade, click on **Workspaces (1)** and select **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)** which is pre-created for the lab.
+1. From the left navigation pane, click **Workspaces (1)**, then select the pre-created workspace **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/pbi40.jpg)
+    ![](./media2/6.png)
 
 1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
 
-   ![](media/updated-reportsu.png)
+    ![](./media2/7.png)
 
 1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
 
-   ![](media/Mod1S6.png)
+    ![](./media2/8.png)
 
 1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
 
@@ -146,6 +146,6 @@ Learner Support Contacts:
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
    
-   ![](./media/GS4.png)
+![](./media2/next-page.png)
 
 ## Happy Learning!!
