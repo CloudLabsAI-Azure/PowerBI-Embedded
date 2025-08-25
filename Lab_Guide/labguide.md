@@ -21,53 +21,55 @@ In this module, you will embed a Power BI report into your application using the
 
 1. From the left navigation pane, click **Workspaces (1)**, select the **ellipsis (...) (2)** next to your **hacker<inject key="DeploymentID" enableCopy="false" />** workspace, and click **Workspace access (3)**.
 
-    ![](media/Mod1S9.png)
+    ![](media2/1/m1s1.png)
 
 1. In the Manage access panel, click **+ Add people or groups**.
    
-    ![](media/Mod1S100.png)
+    ![](media2/1/m1s2.png)
 
     >**Note**: If the window does not appear, try opening the portal in an InPrivate browser window. 
    
 1. In the Add people window, type and select **PowerbiSDP (1)** in the search box, use the **dropdown (2)** to select **Admin (3)** role, click **Add (4)**, then click the **X (5)** button to exit the panel.
 
-    ![](media/Mod1S11.png)  
+    ![](media2/1/m1s3a.png) 
 
 1. From the left navigation pane, open the **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select the **Wingtip Sales Analysis (2)** report.
 
-    ![](media/bi2.png)   
+    ![](media2/1/m1s4.png)  
 
 1. From the browser’s address bar, copy the **Workspace ID (1)** and **Report ID (2)**, then save them in a notepad for use in later steps.
 
-    ![](media/Mod1S13.png) 
+    ![](media2/1/m1s5.png) 
 
 1. Go back to the **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace from the left navigation pane and select the **Wingtip Sales Analysis (2)** semantic model.
 
-    ![](media/bi1.png)   
+    ![](media2/1/m1s6.png)  
     
 1. From the browser’s address bar, copy the **Dataset ID** and save it in a notepad for use in later steps
 
-    ![](media/Mod1S15.png)   
+    ![](media2/1/m1s7.png)    
 
 1. From the taskbar, click the **Visual Studio Code** icon to launch the application.
 
-    ![](media/pbi43.jpg) 
+    ![](media2/1/m1s8.png) 
 
    >**Note** : The application might take a few seconds to load.
 
-1. In the VS Code, click on **Open Folder** and navigate to `C:\Users\hacker1\Desktop\hacker` path and make sure to select and open the folder **Power BI Embedded workshop_latest**. 
+1. In the VS Code, click on **Open Folder (1)** and navigate to `C:\Users\hacker1\Desktop\hacker` **(2)** path and make sure to select the folder **Power BI Embedded workshop_latest (3)** and click **Select Folder (4)**. 
 
-      ![](media/M1S12_1.png)
+     ![](media2/1/m1s9a.png) 
+
+     ![](media2/1/m1s9.png) 
 
       >**Note**: If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
 
       ![](media/trust.png) 
   
-1. Once the folder is open, click on the **appsettings.json (2)** to open it, replace **ClientId (Application ID), TenantId, ClientSecret (Secret key) (3)** in the lines 5,6, and 10 respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+1. Once the folder is open, click on the **appsettings.json (1)** to open it, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details** option in the **Environment Details (4)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
-    ![](media/M1S17new.png)
+     ![](media2/1/m1s10.png)
    
 1. Click the **ellipsis (⋯) (1)** from the top menu, go to **Terminal (2)**, and select **New Terminal (3)**.
 

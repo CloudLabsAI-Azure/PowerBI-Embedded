@@ -121,7 +121,9 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
 
-      ![](media/Mod1S7.png)
+    ![](media/Mod1S7.png)
+   
+    ![](./media2/9.png)
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
  
@@ -129,7 +131,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
-      ![](media/Mod1S8.png)   
+    ![](./media2/10.png)
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
 
