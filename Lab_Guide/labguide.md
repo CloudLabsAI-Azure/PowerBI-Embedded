@@ -150,23 +150,23 @@ In this module, you will integrate the Q&A feature in Power BI to allow users to
 
 In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
 
-1. Navigate back to VS Code and open `/wwwroot/js/index.js` file. Comment **line #12** to enable the **Export to CSV** button by adding **//** in front of the export statement and save the code using **CTRL+S**.
+1. Navigate back to VS Code, open the `/wwwroot/js/index.js` file, comment **line #12** by adding `//` before the export statement to enable the **Export to CSV** button, and press **CTRL+S** to save the changes.
 
    ![](media/pbi59.jpg)
 
-1. Navigate back to browser and refresh the web page. Click on **Export to CSV** button on the top right of the embedded report. A CSV file will get downloaded with the exported data present in it.
+1. Navigate back to the browser and refresh the web page; then, from the top right of the embedded report, click the **Export to CSV** button. A **CSV** file containing the exported data will automatically be downloaded.
 
    ![](media/pbi60.jpg)
 
-1. You can also export the data by clicking on the **ellipse (1)** button and select **Export data (2)**
+1. Alternatively, you can export visual-specific data by clicking the **ellipsis (...) (1)** icon from the top-right corner of the visual and selecting **Export data (2)** from the dropdown menu.
 
    ![](media/pbi61.jpg)   
 
-1. In Which data do you want to export pop up, select **Summarized data (1)**, select **.csv (30,000-row max) (2)** as File format, and click on **Export (3)**. 
+1. In the **Which data do you want to export?** popup, choose **Summarized data (1)**, select **.csv (30,000-row max) (2)** as the file format from the dropdown, and click **Export (3)** to download the data.
 
    ![](media/pbi62.jpg)
 
-### Module 4: Embedding with RLS
+## Module 4: Embedding with RLS
 
 In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
