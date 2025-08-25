@@ -10,48 +10,48 @@
 
 You will be able to complete the following tasks:
 
-- **Module 1**: Embed a Power BI report using App Owns Data embedding
-- **Module 2**: Embed Q&A (Question & Answer) for a Power BI dataset
-- **Module 3**: Understand exporting a visual’s data 
-- **Module 4**: Enable data security based on user context
+- **Module 1:** Embed a Power BI report using App Owns Data embedding
+- **Module 2:** Embed Q&A (Question & Answer) for a Power BI dataset
+- **Module 3:** Understand exporting a visual’s data 
+- **Module 4:** Enable data security based on user context
 
 ## Module 1: Embedding Your First Power BI report
 
 In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
-1. From the side blade, click on **Workspaces (1)** and select **ellipse button** **(2)** adjacent to hacker<inject key="DeploymentID" enableCopy="false" />, and click on **Workspace access (3)**.
+1. From the left navigation pane, click **Workspaces (1)**, select the **ellipsis (...) (2)** next to your **hacker<inject key="DeploymentID" enableCopy="false" />** workspace, and click **Workspace access (3)**.
 
-   ![](media/Mod1S9.png)
+    ![](media/Mod1S9.png)
 
-1. In the Manage access tab, select **+ Add people or groups**.
+1. In the Manage access panel, click **+ Add people or groups**.
    
-   ![](media/Mod1S100.png)
+    ![](media/Mod1S100.png)
 
-    >**Note**: If you are unable to see the window, please open it via InPrivate Window. 
+    >**Note**: If the window does not appear, try opening the portal in an InPrivate browser window. 
    
-1. In the next window that opens, in the **Enter name or email** search box type and select **PowerbiSDP (1)** security group, click on the **dropdown (2)** to open dropdown and select **Admin (3)** privilege from the drop down, and click on **Add (4)** button. Once added, click on **close (5)** button to close the tab.
+1. In the Add people window, type and select **PowerbiSDP (1)** in the search box, use the **dropdown (2)** to select **Admin (3)** role, click **Add (4)**, then click the **X (5)** button to exit the panel.
 
-   ![](media/Mod1S11.png)  
+    ![](media/Mod1S11.png)  
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select **Wingtip Sales Analysis (2)** report.
+1. From the left navigation pane, open the **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select the **Wingtip Sales Analysis (2)** report.
 
-   ![](media/bi2.png)   
+    ![](media/bi2.png)   
 
-1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
+1. From the browser’s address bar, copy the **Workspace ID (1)** and **Report ID (2)**, then save them in a notepad for use in later steps.
 
-   ![](media/Mod1S13.png) 
+    ![](media/Mod1S13.png) 
 
-1. Go back to **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace and select **Wingtip Sales Analysis (2)** semantic model.
+1. Go back to the **hacker<inject key="DeploymentID" enableCopy="false" />** **(1)** workspace from the left navigation pane and select the **Wingtip Sales Analysis (2)** semantic model.
 
-   ![](media/bi1.png)   
+    ![](media/bi1.png)   
     
-1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
+1. From the browser’s address bar, copy the **Dataset ID** and save it in a notepad for use in later steps
 
-   ![](media/Mod1S15.png)   
+    ![](media/Mod1S15.png)   
 
-1. From the taskbar, select the **Visual Studio Code** icon to open the application.
+1. From the taskbar, click the **Visual Studio Code** icon to launch the application.
 
-   ![](media/pbi43.jpg) 
+    ![](media/pbi43.jpg) 
 
    >**Note** : The application might take a few seconds to load.
 
@@ -67,86 +67,86 @@ In this module, you will embed a Power BI report into your application using the
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
-   ![](media/M1S17new.png)
+    ![](media/M1S17new.png)
    
-1. Click on the **Ellipsis (...) (1)** from the top, click on **Terminal (2)** and select **New Terminal (3)**.
+1. Click the **ellipsis (⋯) (1)** from the top menu, go to **Terminal (2)**, and select **New Terminal (3)**.
 
-   ![](media/emb4.png)
+    ![](media/emb4.png)
 
-1. Run the below command and press **Enter** to run the sample code to embed the power bi report `Wingtip Sales Analysis` in READ mode and observe the output.
+1. Run the command below and press **Enter** to execute the sample code that embeds the `Wingtip Sales Analysis` Power BI report in READ mode, then observe the output.
 
     ```
    dotnet run
     ```
    
-   >**Note** : If you're encountering any errors, try running this command first: `dotnet dev-certs https`, and then execute the `dotnet run` command again.
+   >**Note** : If you encounter any errors, run `dotnet dev-certs https` in the terminal, then re-run the application using `dotnet run`.
 
-1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
+1. Once the code is executed, hold the `Ctrl` key and click the link `https://localhost:5001`
+ in the terminal to launch the browser and open the app.
 
    ![](media/M1S14.png)
 
-1. In the web browser, If you see the Your connection isn't private pop-up, click on **Advanced**, then select **Continue to localhost (unsafe)**.
+1. In the web browser, if you see a **Your connection isn’t private** warning, click **Advanced (1)**, then choose **Continue to localhost (unsafe) (2)**.
 
       ![](media/connectionisntprivate.png)
 
       ![](media/Continuetolocalhost.png)
 
-1. Once the browser is launched, you should see a web app that has now embedded your **Wingtip Sales Analysis** report you viewed from Power BI in the earlier steps.
+1. Once the browser launches, you should see the web app displaying your **Wingtip Sales Analysis** report embedded from Power BI.
 
     ![](media/pbi7.jpg)
 
 1. Navigate and explore the report and note the interactivity. Now, leave the browser open.
 
-1. Navigate to VS Code, open `/wwwroot/js/index.js` **(1)** file. **Uncomment (2)** the WRITE MODE embedding in line #59 and save the file.
+1. In Visual Studio Code, open the **`/wwwroot/js/index.js` file (1)**, then **uncomment** the WRITE MODE embedding code on **line 59 (2)**, and save the changes.
 
     ![](media/pbi51.jpg)
 
-1. Refresh the web page in the browser and scroll down. You should see the same Wingtip Sales Analysis Report as a second report below the original report –
-except – now you have edit/modification capabilities:
+1. After refreshing, you’ll see the **Wingtip Sales Analysis** report embedded twice—one in read-only mode and the second with full edit capabilities.
+
+    >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate window.
    
-   >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate mode.
-   
-   ![](media/pbi10.jpg)
+    ![](media/pbi10.jpg)
 
-1. Perform a test update to the embedded report like, select the **chart (1)**, change the chart into **Donut chart (2)**.
+1. From the report canvas on the left-hand pane, select the existing **chart (1)**, then from the Visualizations pane on the right, change the chart type to a **Donut chart** by clicking the corresponding **icon (2)** near the middle of the pane.
 
-   ![](media/pbi52.jpg)
+    ![](media/pbi52.jpg)
 
-   >**Note** : You can also click on the ellipsis (...) on the chart, choose New visual calculation, and select the Donut chart to update the embedded report.
+    >**Note:** You can also click on the ellipsis (...) on the chart, choose New visual calculation, and select the Donut chart to update the embedded report.
 
-   ![](media/chartupdate.png)
+    ![](media/chartupdate.png)
 
-1. Click on **File (1)**, click on **Save as (2)** button, and provide the name as **Wingtip Sales Analysis updated Report (3)**, and click on **Save (4)**.   
+1. From the top-left corner, click **File (1**), select **Save as (2)**, enter **Wingtip Sales Analysis updated Report (3)** in the prompt, and then click **Save (4)** to save your changes.
 
-   ![](media/pbi53.jpg)
+    ![](media/pbi53.jpg)
 
-1. Navigate to browser tab where you have the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace open. Then refresh the tab and now you'll be able to visualize the new report.
+1. Go to the browser tab where your **hacker<inject key="DeploymentID" enableCopy="false" />** workspace is open, then refresh the page to load and visualize the updated report.
 
-   ![](media/wingtip-update-reportu.png)
+    ![](media/wingtip-update-reportu.png)
 
    In this module, you have learned to embed a report in Read and Edit mode.
 
-### Module 2: Embedding Q&A
+## Module 2: Embedding Q&A
 
 In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
 
-1. Navigate back to VS Code, in `/wwwroot/js/index.js` file, verify if the **Dataset ID** is already updated in **line #11**.
+1. In VS Code, open the file `/wwwroot/js/index.js` and confirm that the **Dataset ID** on **line #11** is already updated.
 
-   ![](media/pbi55.jpg)
+    ![](media/pbi55.jpg)
 
-1. In the same Index.js file, **uncomment** the Q&A embed code in **line #60** to embed a Q&A visual and save the code using **CTRL+S**.
+1. In the same index.js file, **uncomment** the Q&A embed code at **line #60** to enable embedding the Q&A visual, then save your changes using **CTRL+S**.
 
-   ![](media/pbi56.jpg)   
+    ![](media/pbi56.jpg)   
 
-1. Navigate back to the browser and refresh the web page and scroll down to the bottom. click on **Ask a question about your data(1)** button, paste **top customer states by units sold (2)** in the query box, and you'll be able visualize the results.
+1. Navigate back to the browser and refresh the web page. Scroll down to the bottom, click the **Ask a question about your data button (1)**, enter the query **top customer states by units sold (2)** in the input box, and observe the visualized results.
 
-   ![](media/pbi57.jpg)
+    ![](media/pbi57.jpg)
 
-   - You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
+    >**Note:** You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
 
    In this module, you have learned to embed Q&A into your web application.   
 
-### Module 3: Export to CSV
+## Module 3: Export to CSV
 
 In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
 
