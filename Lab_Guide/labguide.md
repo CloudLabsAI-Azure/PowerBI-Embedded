@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Power BI Embedded** enables the integration of interactive data visualizations into applications. It allows embedding of **Power BI** reports, managing authentication through **Azure AD**, and using the **Power BI REST API** to deliver embedded business intelligence features.
+In this lab, you'll embed **Power BI reports** into a web application using **Power BI** Embedded. You’ll publish a pre-built report to the **Power BI** Service and integrate it into a custom app using the **App Owns Data** model. The lab also covers key features like **Q&A natural language queries, data export**, and **row-level security (RLS)** to deliver personalized and interactive reporting experiences.
 
 ## Lab Objectives
 
@@ -170,48 +170,50 @@ In this module, you will learn how to export the underlying data from a Power BI
 
 In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
-1. From Desktop, open **File explorer (1)**, navigate to `C:\LabFiles` **(2)** directory, and open **Sales and Returns Sample without RLS.pbix (3)** file.
+1. From the Desktop, open **File Explorer (1)**, navigate to the **`C:\LabFiles` (2)** directory, and double-click to open the **Sales & Returns Sample without RLS.pbix file (3)**.
 
-   ![](media/pbi63.jpg)
+    ![](media/pbi63.jpg)
 
-1. If Enter your email address pop-up appears, Provide the **Email: <inject key="AzureAdUserEmail"></inject>** **(1)**  and click on **Continue**.
+1. If the Enter your email address pop-up appears, enter the following email address and click **Continue (2)**.
 
-   ![](media/pbi64.jpg)   
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-1. Now enter the following password and click on **Sign in**.
+    ![](media/pbi64.jpg)   
+
+1. Now enter the following password and click on **Sign in (2)**.
    
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** 
    
-   ![](media/pbi33.jpg)   
+    ![](media/pbi33.jpg)   
 
-1. In the Power BI application, select **Modelling (1)** tab, click on **Manage roles (2)**, and click on **Create (3)** button.
+1. In the Power BI application, navigate to the **Modeling (1)** tab in the top ribbon, click on **Manage roles (2)** under the Security section, and then click the **Create (3)** button in the Manage roles window.
 
-   ![](media/pbi66.jpg)
+    ![](media/pbi66.jpg)
 
 1. Follow the below-mentioned steps to create the role.
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
    - Enter `[Type] = "External"` **(3)** in Table filter DAX expression and click on **verify (4)**. 
-   - Finally, click on **Save (4)** button.
+   - Finally, click on **Save (5)** button.
 
-   ![](media/pbi81.jpg)
+    ![](media/pbi81.jpg)
 
-1. Click on **File** present in top left corner.
+1. From the top-left corner of the Power BI Desktop window, click on the **File** menu to access the application options.
 
-   ![](media/pbi68.jpg)
+    ![](media/pbi68.jpg)
 
-1. Click on the **Save** button to save the report.
+1. Click on the **Save** from the left-hand menu to save the report.
 
-   ![](media/pbi69.jpg)
+    ![](media/pbi69.jpg)
 
-1. Click on **File** present in top left corner. Click on **publish (1)** button and select **Publish to Power BI (2)**.
+1. From the top-left corner of the Power BI Desktop, click **File**, then select **Publish (1)** from the left-hand menu, and click on **Publish to Power BI (2)**.
 
-   ![](media/pbi70.jpg)
+    ![](media/pbi70.jpg)
 
-1. Select the **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and click on **Select (2)**.
+1. From the Publish to Power BI dialog, select the workspace named **hacker<inject key="DeploymentID" enableCopy="false" /> (1)**, then click the **Select (2)** to publish your report.
 
-   ![](media/pbi71.jpg)
+    ![](media/pbi71.jpg)
    
    > **Note**: If it ask for Replace this dataset? click on **Replace**
 
@@ -219,37 +221,37 @@ In this module, we will create a role to enable row level security. In our case,
 
    > **Note**: Please wait until the report gets published.
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** report.
+1. From the Power BI portal, navigate to the **hacker<inject key="DeploymentID" enableCopy="false" /> (1)** workspace using the left-hand pane, then locate and open the **Sales & Returns Sample without RLS (2)** report.
 
-   ![](media/Sales&ReturnsSamplewithoutRLSreport.png)   
+    ![](media/Sales&ReturnsSamplewithoutRLSreport.png)   
 
-1. Copy the **Workspace ID (1)** and **Report ID (2)** from the URL. Save it in a notepad and you'll be using the value in further steps.
+1. From the browser’s address bar, copy the **Workspace ID (1)** and the **Report ID (2)**, then paste and save both values in a Notepad file for use in later steps.
 
-   ![](media/pbi75.jpg) 
+    ![](media/pbi75.jpg) 
 
-1. From the browser tab, open **hacker<inject key="DeploymentID" enableCopy="false" />** workspace and select **Sales & Returns Sample without RLS (2)** semantic model.
+1. From the Power BI portal, navigate to the **hacker<inject key="DeploymentID" enableCopy="false" /> (1)** workspace using the left-hand pane, then locate and open the **Sales & Returns Sample without RLS (2)** semantic model.
 
-   ![](media/Sales&ReturnsSamplewithoutRLSsematic.png)   
+    ![](media/Sales&ReturnsSamplewithoutRLSsematic.png)   
     
-1. Copy the **Datsaset ID (1)** and save it in a notepad. You'll be using the value in further steps.
+1. From the browser’s address bar, copy the **Dataset ID** and save it in a Notepad file for use in upcoming steps.
 
-   ![](media/M4S12.png)    
+    ![](media/M4S12.png)    
 
-1. Navigate back to VS Code, open `/Services/PBIEmbedService.cs` **(1)** file and **uncomment** line `#118` **(2)** and save the code using **CTRL+S**.
+1. In Visual Studio Code, from the left-hand file explorer, navigate to `/Services/PbiEmbedService.cs` **(1)**, scroll to **line #118 (2)**, **uncomment** the line initializing the identities list, and press Ctrl+S to save the file.
 
-   ![](media/pbi72.jpg) 
+    ![](media/pbi72.jpg) 
 
 1. Review that the Username and role values to the new role that you have created in PBI Desktop are already updated.
 
-   ![](media/pbi73.jpg) 
+    ![](media/pbi73.jpg) 
     
-1. Like in Module 1 earlier, navigate to /appsettings.json file and update the **workspace ID**, **Report ID**, and **Dataset ID** parameters copied in previous steps to reflect the new report “Sales and Returns Sample without RLS”. Save the code using **CTRL+S**.
+1. Navigate to the `/appsettings.json` file from the left-hand pane in Visual Studio Code, and update the values for **WorkspaceId**, **ReportId**, and **DatasetId** under the "PowerBI" section using the IDs you copied in the previous steps for the report **Sales and Returns Sample without RLS**. Press **CTRL+S** to save the changes.
 
-   ![](media/pbi78.jpg) 
+    ![](media/pbi78.jpg) 
 
-1. Click on the **Ellipsis (...) (1)** from the top, click on **Terminal (2)** and select **New Terminal (3)**.
+1. From the top menu bar, click on the **ellipsis (...) (1)**, hover over **Terminal (2)**, and select **New Terminal (3)** to open a new terminal window in Visual Studio Code.
 
-      ![](media/emb4.png)
+    ![](media/emb4.png)
 
 1. Run the below command and press **Enter** to run the sample code.
 
@@ -259,18 +261,18 @@ In this module, we will create a role to enable row level security. In our case,
 
    >**Note** : If the sample code from Module 1 is still running, use Ctrl + C to stop it, and then execute the `dotnet run` command.
 
-1. Once the code is executed, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the browser/app:   
+1. Once the code is successfully executed in the terminal, hold the `Ctrl` key and click on the link `https://localhost:5001` to launch the embedded Power BI app in your default web browser.
 
-   ![](media/M1S14.png)  
+    ![](media/M1S14.png)  
 
 1. Now, you can see that the numbers in the visual are slightly on the lower side due to the user (john) 
 specific filtering. You can compare the **Power BI Embedded Sample** report with the **Sales & Returns Sample without RLS** report which you updated in previous steps in the PowerBI desktop application.
 
-   ![](media/M4PBISR1.png)
+    ![](media/M4PBISR1.png)
    
-   ![](media/M4PBISR2.png)
+    ![](media/M4PBISR2.png)
 
-1. In this module, you have learned to embed a Power BI report with data security as per the user’s context.
+   In this module, you have learned to embed a Power BI report with data security as per the user’s context.
 
 ## Summary 
 
