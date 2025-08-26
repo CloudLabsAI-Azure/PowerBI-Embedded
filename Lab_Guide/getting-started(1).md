@@ -131,10 +131,8 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](./media2/8.png)
 
-1. Scroll down to Developer settings. If **Service principals can use Fabric APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
+1. Scroll down to Developer settings. If **Service principals can call Fabric APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
 
-    ![](media/Mod1S7.png)
-   
     ![](./media2/9.png)
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
