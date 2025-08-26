@@ -27,7 +27,7 @@ In this module, you will embed a Power BI report into your application using the
    
      ![](media2/1/m1s2.png)
 
-    >**Note**: If the window does not appear, try opening the portal in an InPrivate browser window. 
+    >**Note:** If the window does not appear, try opening the portal in an InPrivate browser window. 
    
 1. In the Add people window, type and select **PowerbiSDP (1)** in the search box, use the **dropdown (2)** to select **Admin (3)** role, click **Add (4)**, then click the **X (5)** button to exit the panel.
 
@@ -61,7 +61,7 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m1s9.png) 
 
-      >**Note**: If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
+      >**Note:** If prompted with the **Do you trust the authors of the files in this folder?** pop-up, click **Yes, I trust the authors**.
 
       ![](media/trust.png) 
   
@@ -229,11 +229,11 @@ In this module, we will create a role to enable row level security. In our case,
 
      ![](media2/1/m4s10.png)
    
-   > **Note**: If it ask for Replace this dataset? click on **Replace**
+   > **Note:** If it ask for Replace this dataset? click on **Replace**
 
      ![](media/replace.png) 
 
-   > **Note**: Please wait until the report gets published.
+   > **Note:** Please wait until the report gets published.
 
 1. Click **Got it** to close the publishing confirmation dialog.
 
@@ -306,3 +306,4 @@ In this lab you have covered the following:
 By completing this hands-on lab on Power BI Embedded, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
 
   
+
