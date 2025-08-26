@@ -10,10 +10,10 @@ In this lab, you'll embed **Power BI reports** into a web application using **Po
 
 You will be able to complete the following tasks:
 
-- **Module 1:** Embed a Power BI report using App Owns Data embedding
-- **Module 2:** Embed Q&A (Question & Answer) for a Power BI dataset
-- **Module 3:** Understand exporting a visual’s data 
-- **Module 4:** Enable data security based on user context
+- Module 1: Embed a Power BI report using App Owns Data embedding
+- Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
+- Module 3: Understand exporting a visual’s data 
+- Module 4: Enable data security based on user context
 
 ## Module 1: Embedding Your First Power BI report
 
@@ -306,4 +306,5 @@ In this lab you have covered the following:
 By completing this hands-on lab on Power BI Embedded, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
 
   
+
 
