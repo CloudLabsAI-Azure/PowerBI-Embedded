@@ -126,16 +126,12 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
     ![](./media2/9.png)
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
- 
-      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can use Fabric APIs.
 
 1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
 
     ![](./media2/10.png)
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
-
-      >**Note** : You can also use the **Filter by keyword** search box at the top right of the page to search for Service principals can access read-only Admin APIs.
 
 ## Support Contact
 
