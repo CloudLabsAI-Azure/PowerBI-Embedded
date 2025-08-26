@@ -294,7 +294,7 @@ specific filtering. You can compare the **Power BI Embedded Sample** report with
 
 ## Summary 
 
-In this lab you have covered the following:
+In this lab, you have completed the following:
 
 - Embedded a Power BI report using App Owns Data embedding
 - Integrated the Q&A feature in Power BI for natural language queries
