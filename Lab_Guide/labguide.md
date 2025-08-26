@@ -55,7 +55,7 @@ In this module, you will embed a Power BI report into your application using the
 
    >**Note** : The application might take a few seconds to load.
 
-1. In the VS Code, click on **Open Folder (1)** and navigate to `C:\Users\hacker1\Desktop\hacker` **(2)** path and make sure to select the folder **Power BI Embedded workshop_latest (3)** and click **Select Folder (4)**. 
+1. In VS Code, if the **Power BI Embedded workshop_latest** folder is not already opened, click on **Open Folder (1)**, navigate to `C:\Users\hacker1\Desktop\hacker` **(2)**, select the **Power BI Embedded workshop_latest (3)** folder, and click **Select Folder (4)**.
 
      ![](media2/1/m1s9a.png) 
 
@@ -65,7 +65,7 @@ In this module, you will embed a Power BI report into your application using the
 
       ![](media/trust.png) 
   
-1. Once the folder is open, click on the **appsettings.json (1)** to open it, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+1. Once the folder is open, click on the **appsettings.json (1)**, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
@@ -77,7 +77,7 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m1s11.png)
 
-1. Run the command below and press **Enter** to execute the sample code that embeds the `Wingtip Sales Analysis` Power BI report in READ mode, then observe the output.
+1. Run the command below and press **Enter** to execute the sample code that embeds the **Wingtip Sales Analysis** Power BI report in READ mode, then observe the output.
 
     ```
    dotnet run
@@ -85,7 +85,7 @@ In this module, you will embed a Power BI report into your application using the
    
    >**Note** : If you encounter any errors, run `dotnet dev-certs https` in the terminal, then re-run the application using `dotnet run`.
 
-1. Once the code is executed, hold the `Ctrl` key and click the link `https://localhost:5001`
+1. Once the code is executed, hold the **Ctrl** key and click the link `https://localhost:5001`
  in the terminal to launch the browser and open the app.
 
      ![](media2/1/m1s13.png)
@@ -102,7 +102,7 @@ In this module, you will embed a Power BI report into your application using the
 
 1. Explore the report and observe its interactive features. Once done, keep the browser window open for the upcoming steps.
 
-1. In Visual Studio Code, open the **`/wwwroot/js/index.js` file (1)**, then **uncomment** the line on **line 59 (2)** to enable **Edit Mode embedding**, then press **Ctrl + S** to save the file.
+1. In Visual Studio Code, open the **`/wwwroot/js/index.js` file (1)**, then **uncomment** the line on **line 59 (2)** to enable **Edit Mode**, then press **Ctrl + S** to save the file.
 
      ![](media2/1/m1s17.png)
 
@@ -166,13 +166,15 @@ In this module, you will learn how to export the underlying data from a Power BI
 
      ![](media2/1/m3s2.png)
 
-1. Alternatively, you can export visual-specific data by clicking the **ellipsis (...) (1)** icon from the top-right corner of the visual and selecting **Export data (2)** from the dropdown menu.
+1. Alternatively, you can export visual-specific data by clicking the **ellipsis (...) (1)** icon from the top-right corner of the visual and selecting **Export data (2)** from the menu.
 
      ![](media2/1/m3s3.png)  
 
 1. In the **Which data do you want to export?** popup, choose **Summarized data (1)**, select **.csv (30,000-row max) (2)** as the file format from the dropdown, and click **Export (3)** to download the data.
 
      ![](media2/1/m3s4.png)  
+
+   In this module, you have learned how to enable and use the export feature to download data from embedded Power BI visuals for further analysis. 
 
 ## Module 4: Enable data security based on user context
 
@@ -198,11 +200,11 @@ In this module, we will create a role to enable row level security. In our case,
    
      ![](media2/1/m4s4.png)   
 
-1. In the Power BI application, navigate to the **Modeling (1)** tab in the top ribbon, click on **Manage roles (2)** under the Security section, and then click the **Create (3)** button in the Manage roles window.
+1. In the Power BI application, navigate to the **Modeling (1)** tab at the top, click on **Manage roles (2)** under the Security section, and then click the **Create (3)** button in the Manage roles window.
 
      ![](media2/1/m4s5.png)  
 
-1. Follow the below-mentioned steps to create the role.
+1. Create the role by following these steps:
 
    - Create a role named **john (1)**.
    - Select **Store (2)** table.
@@ -231,7 +233,7 @@ In this module, we will create a role to enable row level security. In our case,
    
    > **Note:** If it ask for Replace this dataset? click on **Replace**
 
-     ![](media/replace.png) 
+   ![](media/replace.png) 
 
    > **Note:** Please wait until the report gets published.
 
@@ -255,15 +257,15 @@ In this module, we will create a role to enable row level security. In our case,
 
      ![](media2/1/m4s15.png)   
 
-1. In Visual Studio Code, from the left-hand file explorer, navigate to `/Services/PbiEmbedService.cs` **(1)**, scroll to **line #118 (2)**, **uncomment** the line initializing the identities list, and press Ctrl+S to save the file.
+1. In Visual Studio Code, from the left-hand file explorer, navigate to `/Services/PbiEmbedService.cs` **(1)**, scroll to **line #118 (2)**, **uncomment** the line initializing the identities list, and press **Ctrl+S** to save the file.
 
      ![](media2/1/m4s16.png)   
 
-1. Review that the Username and role values to the new role that you have created in PBI Desktop are already updated.
+1. Review that the Username and role values to the new role that you have created in Power BI Desktop are already updated.
 
      ![](media2/1/m4s17.png)
     
-1. Navigate to the `/appsettings.json` **(1)** file from the left-hand pane in Visual Studio Code, and update the values for **WorkspaceId**, **ReportId**, and **DatasetId (3)** under the "PowerBI" section using the IDs you copied in the previous steps for the report **Sales and Returns Sample without RLS**. Press **CTRL+S** to save the changes.
+1. Navigate to the `/appsettings.json` **(1)** file from the left-hand pane in Visual Studio Code, and update the values for **WorkspaceId**, **ReportId**, and **DatasetId (3)** under the **PowerBI** section using the IDs you copied in the previous steps for the report **Sales and Returns Sample without RLS**. Press **CTRL+S** to save the changes.
 
      ![](media2/1/m4s18.png)
 
