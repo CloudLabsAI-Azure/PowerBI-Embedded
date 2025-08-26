@@ -6,6 +6,8 @@
 
 Power BI Embedded enables you to seamlessly integrate interactive Power BI reports and dashboards into your applications, providing rich data visualization experiences for your users. With capabilities to create, embed, and customize Power BI content, this service helps organizations enhance decision-making processes and deliver actionable insights. By leveraging Power BI Embedded, you can enable scalable, secure, and cost-effective analytics solutions tailored to your business needs, fostering innovation and improving operational efficiency.
 
+This lab provides hands-on experience with Power BI Embedded, guiding participants through the process of integrating interactive Power BI reports and dashboards into custom applications. Through step-by-step exercises, you will learn how to embed and configure Power BI content using the App Owns Data model. The lab also covers key features such as natural language queries (Q&A), data export, and row-level security (RLS) to deliver personalized and secure analytics experiences. By the end of this lab, you will be equipped with the skills to build scalable and interactive reporting solutions that enhance data-driven decision-making within your applications.
+
 ## Objective
 
 By the end of this lab, you will be able to:
@@ -32,7 +34,7 @@ The architecture for integrating **Power BI Embedded** into applications involve
 
 ## Architechture Diagram
 
-![](./media/arch01.JPG)
+![](./media2/arch.png)
 
 ## Explanation of Components
 
@@ -84,12 +86,18 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    ![](./media2/zoom.png)
 
 ## Let's Get Started with Power BI Portal
- 
-1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
+
+1. If you see the **Microsoft Teams** window, click the **X** button at the top-right corner to close it.
+
+    ![](./media2/1/teams.png)
+
+1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Power Bi** portal by copying and pasting the following URL into the address bar:
 
    ```
    https://app.powerbi.com/
    ```
+
+    ![](./media2/edge.png)
 
 2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
  
@@ -115,15 +123,15 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](./media2/6.png)
 
-1. You'll be able to visualize the **Wingtip Sales Analysis** report uploaded in the workspace.
+1. You'll be able to visualize the **Wingtip Sales Analysis** report and semantic model uploaded in the workspace.
 
     ![](./media2/7.png)
 
-1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)** button.
+1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)**.
 
     ![](./media2/8.png)
 
-1. Scroll down to Developer settings, if not enabled then **Enable (1)** the **Service principals can use Fabric APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**. 
+1. Scroll down to Developer settings. If **Service principals can use Fabric APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
 
     ![](media/Mod1S7.png)
    
@@ -131,7 +139,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
       >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
 
-1. Scroll down to Admin API settings, if not enabled then **Enable (1)** the **Service principals can access read-only Admin APIs**. Under Apply to option, select the **Specific security groups (2)** button, search and select **PowerbiSDP (3)** group. Finally, click on **Apply (4)**.    
+1. Scroll down to Admin API settings. If **Service principals can access read-only Admin APIs** is not already **enabled**, toggle it **on (1)**. Under the **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
 
     ![](./media2/10.png)
 
