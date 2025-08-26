@@ -8,19 +8,23 @@ Power BI Embedded enables you to seamlessly integrate interactive Power BI repor
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in leveraging Power BI Embedded to integrate and customize data visualizations within applications, providing scalable and interactive reporting solutions.
+By the end of this lab, you will be able to:
 
-- **Power BI Embedded Workshop Guide:** Implement Power BI Embedded to embed reports and dashboards into custom applications. Configure access and manage authentication for seamless integration.
+- **Embed Power BI reports:** Integrate reports into a web application using the App Owns Data model with service principal authentication.
+
+- **Enable natural language queries:** Embed the Q&A visual to allow users to interact with data using natural language.
+
+- **Export report data:** Configure export options to allow users to download visual data as CSV files.
+
+- **Apply row-level security (RLS):** Implement RLS to restrict data access based on user roles for secure, personalized reporting.
 
 ## Prerequisites
 
-Participants should have the following prerequisites:
-
-- **Basic Understanding of Power BI**: Familiarity with Power BI concepts, including creating reports and dashboards.
-- **Experience with Azure Portal**: Ability to navigate and manage Azure resources via the Azure Portal.
-- **Knowledge of Power BI Service**: Understanding of how to publish and manage Power BI reports in the Power BI Service.
-- **Basic Programming Knowledge**: Familiarity with programming or scripting languages (such as JavaScript or C#) to interact with Power BI Embedded APIs for embedding reports into applications.
-- **Familiarity with APIs**: Understanding of how to use REST APIs for embedding Power BI content into applications.
+- Basic understanding of Power BI and the Power BI Service
+- Familiarity with Power BI workspace concepts and report publishing
+- Working knowledge of Visual Studio Code and editing JSON/C# files
+- Experience using Power Query and data transformation techniques
+- Foundational knowledge of authentication concepts
 
 ## Architechture
 

@@ -1,4 +1,4 @@
-# Power BI Embedded
+# Power BI Embedded Workshop Guide
 
 ### Estimated Duration: 4 Hours
 
@@ -15,7 +15,7 @@ You will be able to complete the following tasks:
 - Module 3: Understand exporting a visual’s data 
 - Module 4: Enable data security based on user context
 
-## Module 1: Embedding Your First Power BI report
+## Module 1: Embed a Power BI report using App Owns Data embedding
 
 In this module, you will embed a Power BI report into your application using the App Owns Data embedding method.
 
@@ -132,7 +132,7 @@ In this module, you will embed a Power BI report into your application using the
 
    In this module, you have learned to embed a report in Read and Edit mode.
 
-## Module 2: Embedding Q&A
+## Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
 
 In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
 
@@ -154,7 +154,7 @@ In this module, you will integrate the Q&A feature in Power BI to allow users to
 
    In this module, you have learned to embed Q&A into your web application.   
 
-## Module 3: Export to CSV
+## Module 3: Understand exporting a visual’s data
 
 In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
 
@@ -174,7 +174,7 @@ In this module, you will learn how to export the underlying data from a Power BI
 
      ![](media2/1/m3s4.png)  
 
-## Module 4: Embedding with RLS
+## Module 4: Enable data security based on user context
 
 In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
