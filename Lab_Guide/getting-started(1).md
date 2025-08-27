@@ -18,7 +18,7 @@ By the end of this lab, you will be able to:
 
 - **Apply row-level security (RLS):** Implement RLS to restrict data access based on user roles for secure, personalized reporting.
 
-## Prerequisites
+## Pre-requisites
 
 - Basic understanding of Power BI and the Power BI Service
 - Familiarity with Power BI workspace concepts and report publishing
