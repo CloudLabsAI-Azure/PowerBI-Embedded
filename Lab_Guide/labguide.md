@@ -178,7 +178,7 @@ In this module, you will learn how to export the underlying data from a Power BI
 
 ## Module 4: Enable data security based on user context
 
-In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
+In this module, you will create a role to enable row level security. In this case, you are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
 1. From the Desktop, open **File Explorer (1)**, navigate to the **`C:\LabFiles` (2)** directory, and double-click to open the **Sales & Returns Sample without RLS.pbix file (3)**.
 
@@ -305,7 +305,7 @@ In this lab, you have completed the following:
 
 ## You have successfully completed the Hands-on lab.
 
-By completing this hands-on lab on Power BI Embedded, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
+By completing this hands-on lab on **Power BI Embedded**, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
 
   
 
