@@ -65,11 +65,11 @@ In this module, you will embed a Power BI report into your application using the
 
       ![](media/trust.png) 
   
-1. Once the folder is open, click on the **appsettings.json (1)**, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+1. Once the folder is open, click on the **appsettings.json (1)**, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, **DatasetId (7)** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
-     ![](media2/1/m1s10.png)
+     ![](media2/1/m1s10aa.png)
 
      ![](media2/1/m1s10b.png)
    
