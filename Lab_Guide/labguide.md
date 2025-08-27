@@ -106,13 +106,13 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m1s17.png)
 
-1. After refreshing, you’ll see the **Wingtip Sales Analysis** report embedded twice—one in read-only mode and the second with full edit capabilities.
+1. After refreshing, you’ll see the **Wingtip Sales Analysis** report embedded twice. One in read-only mode and the second with full edit capabilities.
 
     >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate window.
    
      ![](media2/1/m1s18.png)
 
-1. From the report canvas on the left-hand pane, select the existing **chart (1)**, then from the Visualizations pane on the right, change the chart type to a **Donut chart** by clicking the corresponding **icon (2)** near the middle of the pane.
+1. From the report canvas on the left-hand pane, select the existing **chart (1)**, then from the Visualizations pane on the right, change the chart type to a **Donut chart** by clicking the corresponding **icon (2)**.
 
      ![](media2/1/m1s19.png)
 
@@ -130,8 +130,6 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m121.png)
 
-   In this module, you have learned to embed a report in Read and Edit mode.
-
 ## Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
 
 In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
@@ -144,16 +142,14 @@ In this module, you will integrate the Q&A feature in Power BI to allow users to
 
      ![](media2/1/m2s2.png)
 
-1. Navigate back to the browser and refresh the web page. Scroll down to the bottom, click the **Ask a question about your data button (1)**, enter the query **top customer states by units sold (2)** in the input box, and observe the visualized results.
+1. Navigate back to the browser and refresh the web page. Scroll down to the bottom, select the **Ask a question about your data (1)** box, enter the query **top customer states by units sold (2)** in the input box, and observe the visualized results.
 
      ![](media2/1/m2s3.png)
 
      ![](media2/1/m2s3a.png)
 
     >**Note:** You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
-
-   In this module, you have learned to embed Q&A into your web application.   
-
+ 
 ## Module 3: Understand exporting a visual’s data
 
 In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
@@ -162,7 +158,7 @@ In this module, you will learn how to export the underlying data from a Power BI
 
      ![](media2/1/m3s1.png)
 
-1. Navigate back to the browser and refresh the web page; then, from the top right of the embedded report, click the **Export to CSV** button. A **CSV** file containing the exported data will automatically be downloaded.
+1. Navigate back to the browser and refresh the web page. Then, from the top right of the embedded report, click the **Export to CSV** button. A **CSV** file containing the exported data will automatically be downloaded.
 
      ![](media2/1/m3s2.png)
 
@@ -173,8 +169,6 @@ In this module, you will learn how to export the underlying data from a Power BI
 1. In the **Which data do you want to export?** popup, choose **Summarized data (1)**, select **.csv (30,000-row max) (2)** as the file format from the dropdown, and click **Export (3)** to download the data.
 
      ![](media2/1/m3s4.png)  
-
-   In this module, you have learned how to enable and use the export feature to download data from embedded Power BI visuals for further analysis. 
 
 ## Module 4: Enable data security based on user context
 
@@ -291,8 +285,6 @@ specific filtering. You can compare the **Power BI Embedded Sample** report with
      ![](media2/1/m4s22.png) 
    
      ![](media2/1/m4s22a.png) 
-
-   In this module, you have learned to embed a Power BI report with data security as per the user’s context.
 
 ## Summary 
 
