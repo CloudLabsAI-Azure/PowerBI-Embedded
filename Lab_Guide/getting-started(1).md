@@ -4,8 +4,6 @@
 
 ## Overview
 
-Power BI Embedded enables you to seamlessly integrate interactive Power BI reports and dashboards into your applications, providing rich data visualization experiences for your users. With capabilities to create, embed, and customize Power BI content, this service helps organizations enhance decision-making processes and deliver actionable insights. By leveraging Power BI Embedded, you can enable scalable, secure, and cost-effective analytics solutions tailored to your business needs, fostering innovation and improving operational efficiency.
-
 This lab provides hands-on experience with Power BI Embedded, guiding participants through the process of integrating interactive Power BI reports and dashboards into custom applications. Through step-by-step exercises, you will learn how to embed and configure Power BI content using the App Owns Data model. The lab also covers key features such as natural language queries (Q&A), data export, and row-level security (RLS) to deliver personalized and secure analytics experiences. By the end of this lab, you will be equipped with the skills to build scalable and interactive reporting solutions that enhance data-driven decision-making within your applications.
 
 ## Objective
@@ -131,7 +129,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](./media2/8.png)
 
-1. Scroll down to Developer settings. If **Service principals can call Fabric APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
+1. Scroll down to Developer settings. If **Service principals can call Fabric public APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
 
     ![](./media2/9.png)
 
