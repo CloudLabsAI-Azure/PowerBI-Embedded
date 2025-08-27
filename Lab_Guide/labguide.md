@@ -65,11 +65,11 @@ In this module, you will embed a Power BI report into your application using the
 
       ![](media/trust.png) 
   
-1. Once the folder is open, click on the **appsettings.json (1)**, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, and **DatasetId** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
+1. Once the folder is open, click on the **appsettings.json (1)**, replace **ClientId (Application ID) (2), TenantId (3), ClientSecret (Secret key) (4)** in the lines **5**,**6**, and **10** respectively. You can find these Id's under the **Service Principal Details (6)** option in the **Environment Details (5)** tab. After replacing the required Id's save the file using **CTRL+S**. Compare the **WorkspaceId**, **ReportId**, **DatasetId (7)** in lines 13, 14, and 15 with the Id's you copied in previous steps. 
 
    >**Note:** The Id's are automatically replaced with the workspace ID, Report ID, and Dataset ID of hacker<inject key="DeploymentID" enableCopy="false" /> workspace respectively.
 
-     ![](media2/1/m1s10.png)
+     ![](media2/1/m1s10aa.png)
 
      ![](media2/1/m1s10b.png)
    
@@ -106,13 +106,13 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m1s17.png)
 
-1. After refreshing, you’ll see the **Wingtip Sales Analysis** report embedded twice—one in read-only mode and the second with full edit capabilities.
+1. After refreshing, you’ll see the **Wingtip Sales Analysis** report embedded twice. One in read-only mode and the second with full edit capabilities.
 
     >**Note:** If you are not able to find and edit the report, please access the same URL in a different web browser or in InPrivate window.
    
      ![](media2/1/m1s18.png)
 
-1. From the report canvas on the left-hand pane, select the existing **chart (1)**, then from the Visualizations pane on the right, change the chart type to a **Donut chart** by clicking the corresponding **icon (2)** near the middle of the pane.
+1. From the report canvas on the left-hand pane, select the existing **chart (1)**, then from the Visualizations pane on the right, change the chart type to a **Donut chart** by clicking the corresponding **icon (2)**.
 
      ![](media2/1/m1s19.png)
 
@@ -130,8 +130,6 @@ In this module, you will embed a Power BI report into your application using the
 
      ![](media2/1/m121.png)
 
-   In this module, you have learned to embed a report in Read and Edit mode.
-
 ## Module 2: Embed Q&A (Question & Answer) for a Power BI dataset
 
 In this module, you will integrate the Q&A feature in Power BI to allow users to query the dataset using natural language.
@@ -144,16 +142,14 @@ In this module, you will integrate the Q&A feature in Power BI to allow users to
 
      ![](media2/1/m2s2.png)
 
-1. Navigate back to the browser and refresh the web page. Scroll down to the bottom, click the **Ask a question about your data button (1)**, enter the query **top customer states by units sold (2)** in the input box, and observe the visualized results.
+1. Navigate back to the browser and refresh the web page. Scroll down to the bottom, select the **Ask a question about your data (1)** box, enter the query **top customer states by units sold (2)** in the input box, and observe the visualized results.
 
      ![](media2/1/m2s3.png)
 
      ![](media2/1/m2s3a.png)
 
     >**Note:** You can also type **top 5 customer segments by customer unit** as a custom question and check the results.
-
-   In this module, you have learned to embed Q&A into your web application.   
-
+ 
 ## Module 3: Understand exporting a visual’s data
 
 In this module, you will learn how to export the underlying data from a Power BI visual for further analysis.
@@ -162,7 +158,7 @@ In this module, you will learn how to export the underlying data from a Power BI
 
      ![](media2/1/m3s1.png)
 
-1. Navigate back to the browser and refresh the web page; then, from the top right of the embedded report, click the **Export to CSV** button. A **CSV** file containing the exported data will automatically be downloaded.
+1. Navigate back to the browser and refresh the web page. Then, from the top right of the embedded report, click the **Export to CSV** button. A **CSV** file containing the exported data will automatically be downloaded.
 
      ![](media2/1/m3s2.png)
 
@@ -174,11 +170,9 @@ In this module, you will learn how to export the underlying data from a Power BI
 
      ![](media2/1/m3s4.png)  
 
-   In this module, you have learned how to enable and use the export feature to download data from embedded Power BI visuals for further analysis. 
-
 ## Module 4: Enable data security based on user context
 
-In this module, we will create a role to enable row level security. In our case, we are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
+In this module, you will create a role to enable row level security. In this case, you are going to apply row level security (RLS) on Internal v/s External stores so that, internal users can only see internal sales data and external users can only see external sales data.
 
 1. From the Desktop, open **File Explorer (1)**, navigate to the **`C:\LabFiles` (2)** directory, and double-click to open the **Sales & Returns Sample without RLS.pbix file (3)**.
 
@@ -292,8 +286,6 @@ specific filtering. You can compare the **Power BI Embedded Sample** report with
    
      ![](media2/1/m4s22a.png) 
 
-   In this module, you have learned to embed a Power BI report with data security as per the user’s context.
-
 ## Summary 
 
 In this lab, you have completed the following:
@@ -305,7 +297,7 @@ In this lab, you have completed the following:
 
 ## You have successfully completed the Hands-on lab.
 
-By completing this hands-on lab on Power BI Embedded, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
+By completing this hands-on lab on **Power BI Embedded**, you have gained practical experience in integrating Power BI capabilities into custom applications. You embedded a Power BI report using the App Owns Data embedding method, enabling seamless access to interactive reports. You also integrated the Q&A feature, allowing users to interact with data using natural language queries. Additionally, you learned how to export data from Power BI visuals for further analysis and configured row-level security (RLS) to ensure users only see data relevant to their role. This lab has equipped you with the foundational skills to build secure, interactive, and user-friendly embedded analytics solutions using Power BI.
 
   
 
