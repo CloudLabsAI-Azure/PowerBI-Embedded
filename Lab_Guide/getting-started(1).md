@@ -53,7 +53,7 @@ Welcome to your Power BI Embedded Hands-On Lab! This lab is designed to give you
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](./media2/access.png)
+   ![](./media2/access2.png)
  
 ## Virtual Machine & Lab Guide
 
@@ -69,7 +69,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./media2/split.png)
+   ![](./media2/split2.png)
 
 ## Managing Your Virtual Machine
  
