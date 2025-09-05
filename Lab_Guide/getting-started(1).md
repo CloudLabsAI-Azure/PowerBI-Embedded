@@ -117,7 +117,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](./media2/powerbi.png)
 
-1. From the left navigation pane, click **Workspaces (1)**, then select the pre-created workspace **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. From the left navigation pane, click **Workspaces (1)**, then select the pre-created workspace **hacker<inject key="DeploymentID" enableCopy="false" />** **(2)**. Please note you will see multiple workspaces, please do search for the mentioned one and select.
 
     ![](./media2/6.png)
 
