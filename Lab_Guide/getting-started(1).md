@@ -125,22 +125,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![](./media2/7.png)
 
-1. From Power BI home page, Click on the **Settings (1)** icon at the top and select **Admin portal (2)**.
-
-    ![](./media2/8.png)
-
-1. Scroll down to Developer settings. If **Service principals can call Fabric public APIs** is not **enabled**, toggle it **on (1)**. Under **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
-
-    ![](./media2/9.png)
-
-      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
-
-1. Scroll down to Admin API settings. If **Service principals can access read-only Admin APIs** is not already **enabled**, toggle it **on (1)**. Under the **Apply to** section, select **Specific security groups (2)**, search and select **PowerbiSDP (3)**, then click **Apply (4)** to save the changes.
-
-    ![](./media2/10.png)
-
-      >**Note** : Please proceed if the **PowerbiSDP** security group is already applied.
-
 ## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
